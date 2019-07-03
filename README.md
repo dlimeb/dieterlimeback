@@ -1,4 +1,7 @@
 # dieterlimeback
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e34855e-50be-4b42-84e6-eddbe2f7f716/deploy-status)](https://app.netlify.com/sites/frosty-curran-d9f06d/deploys)
+
 Website at dieterlimeback.com
 
 ### Installation
