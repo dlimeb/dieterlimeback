@@ -1,5 +1,18 @@
 @import "variables";
 
-p {
-  color: $color;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 24px;
+}
+section {
+  background: url(../images/paint.jpg) no-repeat top left;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
