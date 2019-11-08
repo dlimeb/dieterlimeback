@@ -10,13 +10,15 @@ Website at dieterlimeback.com
 npm install
 ```
 
-### Start Dev Server
+Install `node` and `npm` via the install script at https://github.com/nvm-sh/nvm if necessary first.
+
+### Start dev server
 
 ```
 npm start
 ```
 
-### Build Prod Version
+### Build prod version
 
 ```
 npm run build
