@@ -1,0 +1,15 @@
+---
+layout: base
+---
+{# Renders a full page, including header and footer. #}
+
+
+{% include "components/header.njk" %}
+
+<main id="main" class="flex flex-1 flex-col mx-auto max-w-2xl">
+  <div class="mb-12">
+    {{ content | safe }}
+  </div>
+</main>
+
+{% include "components/footer.njk" %}

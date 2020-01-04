@@ -1,52 +1,37 @@
 {
-  "name": "webpack-starter",
-  "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
-  "scripts": {
-    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
-  },
-  "keywords": [
-    "webpack",
-    "startkit",
-    "frontend",
-    "es6",
-    "javascript",
-    "webdev"
-  ],
-  "author": "webkid.io",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.2",
-    "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^2.0.2",
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^2.1.1",
-    "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
-    "file-loader": "^3.0.1",
-    "html-webpack-plugin": "^4.0.0-beta.5",
-    "mini-css-extract-plugin": "^0.6.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.0",
-    "core-js": "^3.0.1"
-  }
+	"name": "dieterlimeback",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve & gulp",
+		"build": "gulp build && eleventy --config=eleventy.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dlimeb/dieterlimeback.git"
+	},
+	"author": "Dieter Limeback",
+	"license": "",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.8.3",
+		"@11ty/eleventy-plugin-inclusive-language": "^1.0.0",
+		"@11ty/eleventy-plugin-rss": "^1.0.7",
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@fullhuman/postcss-purgecss": "^1.2.0",
+		"cheerio": "^1.0.0-rc.3",
+		"eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset#master",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"html-minifier": "^4.0.0",
+		"tailwindcss": "^1.0.5"
+	},
+	"dependencies": {}
 }

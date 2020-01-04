@@ -1,0 +1,24 @@
+
+//==========  Header & Footer ==========//
+
+header a,
+footer a {
+  @apply border-0 font-sans text-xs uppercase font-semibold tracking-wider;
+
+  &:hover {
+    @apply no-underline border-b border-solid;
+    border-color: theme('colors.oof');
+  }
+
+  &.logo:hover {
+    border: 0;
+  }
+}
+
+footer {
+  input[type='submit'] {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

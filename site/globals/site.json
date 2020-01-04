@@ -1,0 +1,24 @@
+{
+    "name": "Dieter Limeback",
+    "url": "https://dieterlimeback.com",
+    "author": {
+        "name": "Dieter Limeback",
+        "email": "dieter@dieterlimeback.com",
+        "handle": "@dlimeb",
+        "avatar": "/images/articles/dieter.jpg"
+    },
+    "images": {
+        "favicon": {
+          "small": "/images/favicon-16x16.png",
+          "medium": "/images/favicon-32x32.png",
+          "large": "/images/favicon-96x96.png"
+        },
+        "twitter": "",
+        "og": ""
+    },
+    "social_links": {
+        "instagram": "https://www.instagram.com/dieterlimeback/",
+        "linkedIn": "https://www.linkedin.com/in/dlimeb/",
+        "email": "mailto:dieter@dieterlimeback.com"
+    }
+}

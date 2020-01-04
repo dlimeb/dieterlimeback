@@ -1,0 +1,12 @@
+{
+    "main": [
+        {
+            "label": "Articles",
+            "url": "/articles/"
+        },
+        {
+            "label": "About",
+            "url": "/about/"
+        }
+    ]
+}

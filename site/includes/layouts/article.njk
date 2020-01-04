@@ -1,0 +1,37 @@
+---
+layout: full
+---
+{# Renders content on a full page. Add title, image, date via YAML front matter for articles, or leave empty to render content only. #}
+
+<article>
+
+  {# title #}
+  {% if title %}
+    <h1 class="italic text-5xl leading-none tracking-tight px-4 md:px-8">{{ title }}</h1>
+  {% endif %}
+
+  {# featured image #}
+  {% if featured_image %}
+    <figure class="mt-10 md:mt-20 md:mb-16">
+      <img src="{{ featured_image }}" alt="{{ image_caption }}" class="inline-block w-full">
+      {% if image_caption %}
+        <figcaption class="text-right text-sm italic mr-2 mt-1">{{ image_caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  <div class="px-4 md:px-8 mt-4">
+    {# article content #}
+    {{ content | safe }}
+
+    {# timestamp #}
+    {% if date %}
+    <div class="text-xl italic mt-4 mb-24 mr-2 text-right">
+      <time datetime="{{ date }}">
+        &raquo; {{ date | dateDisplay }}
+      </time>
+    </div>
+    {% endif %}
+
+  </div>
+</article>

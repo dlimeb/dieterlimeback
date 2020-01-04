@@ -1,35 +1,47 @@
-# dieterlimeback
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6e34855e-50be-4b42-84e6-eddbe2f7f716/deploy-status)](https://app.netlify.com/sites/frosty-curran-d9f06d/deploys)
 
-Website at dieterlimeback.com
+# dieterlimeback
 
-### Installation
+This is the website at [dieterlimeback.com](https://dieterlimeback.com/). Built from [Skeleventy](https://skeleventy.netlify.com/), a skeleton boilerplate built with Eleventy and TailwindCSS.
+
+## Features
+
+- Build sites faster, with the power of Eleventy, TailwindCSS and SCSS
+- Gulp build pipeline to watch, concatenate and compile styles and scripts
+- HTML minifier
+- Purgecss for removing unused CSS
+- ES6 support with Babel
+- SEO friendly pages (including open graph and twitter meta)
+- A simple blog, with categories and featured images
+
+## Requirements
+
+Node `>=` v8.9.0. Install `node` and `npm` via the install script at https://github.com/nvm-sh/nvm.
+
+## Installation
 
 ```
 npm install
 ```
 
-Install `node` and `npm` via the install script at https://github.com/nvm-sh/nvm if necessary first.
+`cd` into your project folder and type the `npm run dev` command into terminal, to start the development server and Gulp. Eleventy has baked in hot reloading and will files for changes.
 
-### Start dev server
+## Folder Structure
 
-```
-npm start
-```
+The `site` folder contains all the templates, pages and content, which Eleventy will watch and parse into HTML for us.
 
-### Build prod version
+Within this, lives a `globals` folder, where you'll find a `site.json` file - for general site config stuff e.g name, author, email, social media...etc.
 
-```
-npm run build
-```
+A `navigation.json`, which we loop over in the template, to generate our nav and a `helpers.js` which just contains a simple environment helper.
 
-### Features:
+Uncompiled SCSS and JS reside in the `resources` folder - Gulp will be watching these folders for any changes (you should restart the server when creating new partials).
 
-Started from [https://github.com/wbkd/webpack-starter](https://github.com/wbkd/webpack-starter).
+When in development mode, Skeleventy will use `main.css` as the stylesheet. This will be pretty chunky in filesize, due to it containing all of Tailwind's utility classes. Once you run the build command ready for deployment, Skeleventy will then reference the minified version of the stylesheet `main.min.css`.
 
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+Purge will also run via the build command and will cross reference all of Tailwind's utility classes with your templates/HTML and will remove all the unused ones - pretty cool right?
 
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
+## Ready to deploy?
+
+Type the `npm run build` command to minify scripts, styles and run Purgecss.
+
+Feel free to adapt this as you wish! Go build some cool stuff and put it on Netlify - seriously it's the future!

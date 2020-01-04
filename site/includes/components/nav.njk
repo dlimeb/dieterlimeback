@@ -1,0 +1,12 @@
+<nav id="nav" class="flex0">
+  <ul class="flex flex-row items-center list-reset">
+    {% for item in navigation.main %}
+      <li class="ml-4">
+        <a href="{{ item.url | safe }}" class="{% if page.url == item.url %}text-black{% endif %}
+            "{% if page.url == item.url %} aria-current="page"{% endif %}>
+            {{ item.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
