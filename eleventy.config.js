@@ -48,6 +48,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("javascript")
     eleventyConfig.addPassthroughCopy("images")
     eleventyConfig.addPassthroughCopy("fonts")
+    eleventyConfig.addPassthroughCopy("site/_redirects")
 
     // Generate Atom XML feed
     // TODO Uncomment when articles are ready
