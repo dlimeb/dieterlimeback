@@ -3,7 +3,7 @@
 
 header a,
 footer a {
-  @apply border-0 font-sans text-xs uppercase font-semibold tracking-wider;
+  @apply border-0 font-sans text-sm font-bold uppercase tracking-wider;
 
   &:hover {
     @apply no-underline border-b border-solid;

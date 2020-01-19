@@ -16,6 +16,7 @@ module.exports = {
       white: '#fff',
 
       oof: '#00f',
+      ooflight: '#4848FF',
 
       gray: {
         100: '#f4f4f4',
@@ -238,7 +239,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
-        'EB Garamond',
+        'adobe-garamond-pro',
         'Georgia',
         'Cambria',
         '"Times New Roman"',
@@ -260,10 +261,10 @@ module.exports = {
       base: '1rem',
       lg: '1.125rem',
       xl: '1.25rem',
-      '2xl': '1.375rem',
+      '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
-      '5xl': '3rem',
+      '5xl': '3.5rem',
       '6xl': '4rem',
     },
     fontWeight: {

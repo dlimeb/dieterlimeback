@@ -1,9 +1,13 @@
-<ul class="flex justify-center">
+{# <ul class="flex justify-center">
   {% for site, link in site.social_links %}
-    <li class="mx-2">
+    <li class="mr-2">
       <a href="{{ link | safe }}" class="">
         {{ site }}
       </a>
     </li>
   {% endfor %}
-</ul>
+</ul> #}
+
+  {% for site, link in site.social_links %}
+    <a href="{{ link | safe }}" class="mr-2">{{ site }}</a>
+  {% endfor %}

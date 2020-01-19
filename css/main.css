@@ -610,59 +610,12 @@ video {
   }
 }
 
-@font-face {
-  font-family: 'Jost';
-
-  font-style: normal;
-
-  font-weight: 600;
-
-  src: url(/fonts/Jost-600-Semi.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'EB Garamond';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: url(/fonts/EBGaramond-Bold.woff2) format("woff2");
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'EB Garamond';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  src: url(/fonts/EBGaramond-Italic.woff) format("woff");
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'EB Garamond';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url(/fonts/EBGaramond-Normal.woff2) format("woff2");
-
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 a {
   transition: 0.1s color ease-out;
 }
 
 a:hover, a:active {
   color: #00f;
-  text-decoration: underline;
 }
 
 article h1 {
@@ -670,10 +623,16 @@ article h1 {
 }
 
 article h1 a {
-  text-decoration: none;
+  border-width: 0;
+}
+
+article h1 a:hover {
+  text-decoration: underline;
 }
 
 article h2 {
+  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -682,16 +641,21 @@ article h2 {
 article p,
 article ul,
 article ol {
+  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  letter-spacing: -0.005em;
+  line-height: 1.5;
 }
 
 article a {
-  text-decoration: underline;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #1a202c;
 }
 
 article a:hover {
   color: #00f;
+  border-color: #00f;
 }
 
 article em {
@@ -719,16 +683,16 @@ article ol {
 }
 
 article .small-caps {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 header a,
 footer a {
   border-width: 0;
   font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
@@ -829,6 +793,10 @@ footer input[type='submit']:hover {
 
 .bg-oof {
   background-color: #00f;
+}
+
+.bg-ooflight {
+  background-color: #4848FF;
 }
 
 .bg-gray-100 {
@@ -1207,6 +1175,10 @@ footer input[type='submit']:hover {
   background-color: #00f;
 }
 
+.hover\:bg-ooflight:hover {
+  background-color: #4848FF;
+}
+
 .hover\:bg-gray-100:hover {
   background-color: #f4f4f4;
 }
@@ -1581,6 +1553,10 @@ footer input[type='submit']:hover {
 
 .focus\:bg-oof:focus {
   background-color: #00f;
+}
+
+.focus\:bg-ooflight:focus {
+  background-color: #4848FF;
 }
 
 .focus\:bg-gray-100:focus {
@@ -2039,6 +2015,10 @@ footer input[type='submit']:hover {
   border-color: #00f;
 }
 
+.border-ooflight {
+  border-color: #4848FF;
+}
+
 .border-gray-100 {
   border-color: #f4f4f4;
 }
@@ -2415,6 +2395,10 @@ footer input[type='submit']:hover {
   border-color: #00f;
 }
 
+.hover\:border-ooflight:hover {
+  border-color: #4848FF;
+}
+
 .hover\:border-gray-100:hover {
   border-color: #f4f4f4;
 }
@@ -2789,6 +2773,10 @@ footer input[type='submit']:hover {
 
 .focus\:border-oof:focus {
   border-color: #00f;
+}
+
+.focus\:border-ooflight:focus {
+  border-color: #4848FF;
 }
 
 .focus\:border-gray-100:focus {
@@ -3758,7 +3746,7 @@ footer input[type='submit']:hover {
 }
 
 .font-serif {
-  font-family: EB Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-mono {
@@ -5943,6 +5931,10 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
+.placeholder-ooflight::placeholder {
+  color: #4848FF;
+}
+
 .placeholder-gray-100::placeholder {
   color: #f4f4f4;
 }
@@ -6317,6 +6309,10 @@ footer input[type='submit']:hover {
 
 .focus\:placeholder-oof:focus::placeholder {
   color: #00f;
+}
+
+.focus\:placeholder-ooflight:focus::placeholder {
+  color: #4848FF;
 }
 
 .focus\:placeholder-gray-100:focus::placeholder {
@@ -6933,6 +6929,10 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
+.text-ooflight {
+  color: #4848FF;
+}
+
 .text-gray-100 {
   color: #f4f4f4;
 }
@@ -7309,6 +7309,10 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
+.hover\:text-ooflight:hover {
+  color: #4848FF;
+}
+
 .hover\:text-gray-100:hover {
   color: #f4f4f4;
 }
@@ -7683,6 +7687,10 @@ footer input[type='submit']:hover {
 
 .focus\:text-oof:focus {
   color: #00f;
+}
+
+.focus\:text-ooflight:focus {
+  color: #4848FF;
 }
 
 .focus\:text-gray-100:focus {
@@ -8066,7 +8074,7 @@ footer input[type='submit']:hover {
 }
 
 .text-2xl {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .text-3xl {
@@ -8078,7 +8086,7 @@ footer input[type='submit']:hover {
 }
 
 .text-5xl {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .text-6xl {
@@ -8565,6 +8573,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .sm\:bg-ooflight {
+    background-color: #4848FF;
+  }
+
   .sm\:bg-gray-100 {
     background-color: #f4f4f4;
   }
@@ -8941,6 +8953,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .sm\:hover\:bg-ooflight:hover {
+    background-color: #4848FF;
+  }
+
   .sm\:hover\:bg-gray-100:hover {
     background-color: #f4f4f4;
   }
@@ -9315,6 +9331,10 @@ footer input[type='submit']:hover {
 
   .sm\:focus\:bg-oof:focus {
     background-color: #00f;
+  }
+
+  .sm\:focus\:bg-ooflight:focus {
+    background-color: #4848FF;
   }
 
   .sm\:focus\:bg-gray-100:focus {
@@ -9773,6 +9793,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .sm\:border-ooflight {
+    border-color: #4848FF;
+  }
+
   .sm\:border-gray-100 {
     border-color: #f4f4f4;
   }
@@ -10149,6 +10173,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .sm\:hover\:border-ooflight:hover {
+    border-color: #4848FF;
+  }
+
   .sm\:hover\:border-gray-100:hover {
     border-color: #f4f4f4;
   }
@@ -10523,6 +10551,10 @@ footer input[type='submit']:hover {
 
   .sm\:focus\:border-oof:focus {
     border-color: #00f;
+  }
+
+  .sm\:focus\:border-ooflight:focus {
+    border-color: #4848FF;
   }
 
   .sm\:focus\:border-gray-100:focus {
@@ -11492,7 +11524,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:font-serif {
-    font-family: EB Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .sm\:font-mono {
@@ -13677,6 +13709,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .sm\:placeholder-ooflight::placeholder {
+    color: #4848FF;
+  }
+
   .sm\:placeholder-gray-100::placeholder {
     color: #f4f4f4;
   }
@@ -14051,6 +14087,10 @@ footer input[type='submit']:hover {
 
   .sm\:focus\:placeholder-oof:focus::placeholder {
     color: #00f;
+  }
+
+  .sm\:focus\:placeholder-ooflight:focus::placeholder {
+    color: #4848FF;
   }
 
   .sm\:focus\:placeholder-gray-100:focus::placeholder {
@@ -14667,6 +14707,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .sm\:text-ooflight {
+    color: #4848FF;
+  }
+
   .sm\:text-gray-100 {
     color: #f4f4f4;
   }
@@ -15043,6 +15087,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .sm\:hover\:text-ooflight:hover {
+    color: #4848FF;
+  }
+
   .sm\:hover\:text-gray-100:hover {
     color: #f4f4f4;
   }
@@ -15417,6 +15465,10 @@ footer input[type='submit']:hover {
 
   .sm\:focus\:text-oof:focus {
     color: #00f;
+  }
+
+  .sm\:focus\:text-ooflight:focus {
+    color: #4848FF;
   }
 
   .sm\:focus\:text-gray-100:focus {
@@ -15800,7 +15852,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-2xl {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   .sm\:text-3xl {
@@ -15812,7 +15864,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-5xl {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .sm\:text-6xl {
@@ -16300,6 +16352,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .md\:bg-ooflight {
+    background-color: #4848FF;
+  }
+
   .md\:bg-gray-100 {
     background-color: #f4f4f4;
   }
@@ -16676,6 +16732,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .md\:hover\:bg-ooflight:hover {
+    background-color: #4848FF;
+  }
+
   .md\:hover\:bg-gray-100:hover {
     background-color: #f4f4f4;
   }
@@ -17050,6 +17110,10 @@ footer input[type='submit']:hover {
 
   .md\:focus\:bg-oof:focus {
     background-color: #00f;
+  }
+
+  .md\:focus\:bg-ooflight:focus {
+    background-color: #4848FF;
   }
 
   .md\:focus\:bg-gray-100:focus {
@@ -17508,6 +17572,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .md\:border-ooflight {
+    border-color: #4848FF;
+  }
+
   .md\:border-gray-100 {
     border-color: #f4f4f4;
   }
@@ -17884,6 +17952,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .md\:hover\:border-ooflight:hover {
+    border-color: #4848FF;
+  }
+
   .md\:hover\:border-gray-100:hover {
     border-color: #f4f4f4;
   }
@@ -18258,6 +18330,10 @@ footer input[type='submit']:hover {
 
   .md\:focus\:border-oof:focus {
     border-color: #00f;
+  }
+
+  .md\:focus\:border-ooflight:focus {
+    border-color: #4848FF;
   }
 
   .md\:focus\:border-gray-100:focus {
@@ -19227,7 +19303,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:font-serif {
-    font-family: EB Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .md\:font-mono {
@@ -21412,6 +21488,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .md\:placeholder-ooflight::placeholder {
+    color: #4848FF;
+  }
+
   .md\:placeholder-gray-100::placeholder {
     color: #f4f4f4;
   }
@@ -21786,6 +21866,10 @@ footer input[type='submit']:hover {
 
   .md\:focus\:placeholder-oof:focus::placeholder {
     color: #00f;
+  }
+
+  .md\:focus\:placeholder-ooflight:focus::placeholder {
+    color: #4848FF;
   }
 
   .md\:focus\:placeholder-gray-100:focus::placeholder {
@@ -22402,6 +22486,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .md\:text-ooflight {
+    color: #4848FF;
+  }
+
   .md\:text-gray-100 {
     color: #f4f4f4;
   }
@@ -22778,6 +22866,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .md\:hover\:text-ooflight:hover {
+    color: #4848FF;
+  }
+
   .md\:hover\:text-gray-100:hover {
     color: #f4f4f4;
   }
@@ -23152,6 +23244,10 @@ footer input[type='submit']:hover {
 
   .md\:focus\:text-oof:focus {
     color: #00f;
+  }
+
+  .md\:focus\:text-ooflight:focus {
+    color: #4848FF;
   }
 
   .md\:focus\:text-gray-100:focus {
@@ -23535,7 +23631,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-2xl {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   .md\:text-3xl {
@@ -23547,7 +23643,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-5xl {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .md\:text-6xl {
@@ -24035,6 +24131,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .lg\:bg-ooflight {
+    background-color: #4848FF;
+  }
+
   .lg\:bg-gray-100 {
     background-color: #f4f4f4;
   }
@@ -24411,6 +24511,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .lg\:hover\:bg-ooflight:hover {
+    background-color: #4848FF;
+  }
+
   .lg\:hover\:bg-gray-100:hover {
     background-color: #f4f4f4;
   }
@@ -24785,6 +24889,10 @@ footer input[type='submit']:hover {
 
   .lg\:focus\:bg-oof:focus {
     background-color: #00f;
+  }
+
+  .lg\:focus\:bg-ooflight:focus {
+    background-color: #4848FF;
   }
 
   .lg\:focus\:bg-gray-100:focus {
@@ -25243,6 +25351,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .lg\:border-ooflight {
+    border-color: #4848FF;
+  }
+
   .lg\:border-gray-100 {
     border-color: #f4f4f4;
   }
@@ -25619,6 +25731,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .lg\:hover\:border-ooflight:hover {
+    border-color: #4848FF;
+  }
+
   .lg\:hover\:border-gray-100:hover {
     border-color: #f4f4f4;
   }
@@ -25993,6 +26109,10 @@ footer input[type='submit']:hover {
 
   .lg\:focus\:border-oof:focus {
     border-color: #00f;
+  }
+
+  .lg\:focus\:border-ooflight:focus {
+    border-color: #4848FF;
   }
 
   .lg\:focus\:border-gray-100:focus {
@@ -26962,7 +27082,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:font-serif {
-    font-family: EB Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .lg\:font-mono {
@@ -29147,6 +29267,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .lg\:placeholder-ooflight::placeholder {
+    color: #4848FF;
+  }
+
   .lg\:placeholder-gray-100::placeholder {
     color: #f4f4f4;
   }
@@ -29521,6 +29645,10 @@ footer input[type='submit']:hover {
 
   .lg\:focus\:placeholder-oof:focus::placeholder {
     color: #00f;
+  }
+
+  .lg\:focus\:placeholder-ooflight:focus::placeholder {
+    color: #4848FF;
   }
 
   .lg\:focus\:placeholder-gray-100:focus::placeholder {
@@ -30137,6 +30265,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .lg\:text-ooflight {
+    color: #4848FF;
+  }
+
   .lg\:text-gray-100 {
     color: #f4f4f4;
   }
@@ -30513,6 +30645,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .lg\:hover\:text-ooflight:hover {
+    color: #4848FF;
+  }
+
   .lg\:hover\:text-gray-100:hover {
     color: #f4f4f4;
   }
@@ -30887,6 +31023,10 @@ footer input[type='submit']:hover {
 
   .lg\:focus\:text-oof:focus {
     color: #00f;
+  }
+
+  .lg\:focus\:text-ooflight:focus {
+    color: #4848FF;
   }
 
   .lg\:focus\:text-gray-100:focus {
@@ -31270,7 +31410,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-2xl {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   .lg\:text-3xl {
@@ -31282,7 +31422,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-5xl {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .lg\:text-6xl {
@@ -31770,6 +31910,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .xl\:bg-ooflight {
+    background-color: #4848FF;
+  }
+
   .xl\:bg-gray-100 {
     background-color: #f4f4f4;
   }
@@ -32146,6 +32290,10 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
+  .xl\:hover\:bg-ooflight:hover {
+    background-color: #4848FF;
+  }
+
   .xl\:hover\:bg-gray-100:hover {
     background-color: #f4f4f4;
   }
@@ -32520,6 +32668,10 @@ footer input[type='submit']:hover {
 
   .xl\:focus\:bg-oof:focus {
     background-color: #00f;
+  }
+
+  .xl\:focus\:bg-ooflight:focus {
+    background-color: #4848FF;
   }
 
   .xl\:focus\:bg-gray-100:focus {
@@ -32978,6 +33130,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .xl\:border-ooflight {
+    border-color: #4848FF;
+  }
+
   .xl\:border-gray-100 {
     border-color: #f4f4f4;
   }
@@ -33354,6 +33510,10 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
+  .xl\:hover\:border-ooflight:hover {
+    border-color: #4848FF;
+  }
+
   .xl\:hover\:border-gray-100:hover {
     border-color: #f4f4f4;
   }
@@ -33728,6 +33888,10 @@ footer input[type='submit']:hover {
 
   .xl\:focus\:border-oof:focus {
     border-color: #00f;
+  }
+
+  .xl\:focus\:border-ooflight:focus {
+    border-color: #4848FF;
   }
 
   .xl\:focus\:border-gray-100:focus {
@@ -34697,7 +34861,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:font-serif {
-    font-family: EB Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .xl\:font-mono {
@@ -36882,6 +37046,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .xl\:placeholder-ooflight::placeholder {
+    color: #4848FF;
+  }
+
   .xl\:placeholder-gray-100::placeholder {
     color: #f4f4f4;
   }
@@ -37256,6 +37424,10 @@ footer input[type='submit']:hover {
 
   .xl\:focus\:placeholder-oof:focus::placeholder {
     color: #00f;
+  }
+
+  .xl\:focus\:placeholder-ooflight:focus::placeholder {
+    color: #4848FF;
   }
 
   .xl\:focus\:placeholder-gray-100:focus::placeholder {
@@ -37872,6 +38044,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .xl\:text-ooflight {
+    color: #4848FF;
+  }
+
   .xl\:text-gray-100 {
     color: #f4f4f4;
   }
@@ -38248,6 +38424,10 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
+  .xl\:hover\:text-ooflight:hover {
+    color: #4848FF;
+  }
+
   .xl\:hover\:text-gray-100:hover {
     color: #f4f4f4;
   }
@@ -38622,6 +38802,10 @@ footer input[type='submit']:hover {
 
   .xl\:focus\:text-oof:focus {
     color: #00f;
+  }
+
+  .xl\:focus\:text-ooflight:focus {
+    color: #4848FF;
   }
 
   .xl\:focus\:text-gray-100:focus {
@@ -39005,7 +39189,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-2xl {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   .xl\:text-3xl {
@@ -39017,7 +39201,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-5xl {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .xl\:text-6xl {
