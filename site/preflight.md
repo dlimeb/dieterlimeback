@@ -7,9 +7,9 @@ image_caption: Photo by Dylan Gillis on Unsplash
 image_alt: Image of a building with an 'Open' sign
 ---
 
-Hello! If you're reading this it's because you're a generally awesome person I feel might be interested in or can help with something new I'm working on.
+Hello! If you're reading this it's because you're a generally awesome person I feel might be interested in (or can help with) something new I've started.
 
-As you may know, last year I took steps to bootstrap a new phase of my career and began investigating coaching. While some form of coaching has been in my leadership skillset for years, I wanted to level up more formally, so I took an extensive training course with [CTI](https://coactive.com/), the largest and most established professional coach training organization in the world.  I am now about to embark upon a more rigorous certification process, and as part of that I am looking for an initial cohort of clients. I have 5 slots remaining for a 4 month program starting in March.
+As you may know, last year I took steps to bootstrap a new phase of my career and began investigating coaching. While some form of coaching has been in my leadership skillset for years, I wanted to level up more formally, so I took an extensive training course with [CTI](https://coactive.com/), the largest and most established professional coach training organization in the world.  I am now about to embark upon a more rigorous certification process, and as part of that I am looking for an initial cohort of clients. I have **5 slots remaining** for a 4 month program starting in March.
 
 If you're interested in coaching, or know someone who might be, read on. This is a great opportunity to get a lot of value without paying higher rates.
 
