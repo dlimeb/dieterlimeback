@@ -1,0 +1,12 @@
+{#
+
+  This is a workaround file to whitelist some TailwindCSS classes that appear in markdown files. Without them appearing here, PurgeCSS will strip them and the built version of the site will be missing them.
+
+  TODO: Remove this hack file and extract tailwind out of markdown to a custom class, so the markdown file has eg <button class="my-btn">
+ #}
+
+px-12
+py-5
+hover:text-white
+md:w-auto
+text-center
