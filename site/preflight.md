@@ -49,7 +49,7 @@ The pilot program is $750 for the entire package described above. This is intend
 Ready to invest in yourself and start living your true potential? Contact me to set up a preliminary no obligation conversation to get the ball rolling.
 
 <p class="text-center my-16">
-  <a href="/contact/" class="font-sans text-base font-bold tracking-wider text-white uppercase hover:text-white bg-oof hover:bg-ooflight border-0 px-12 py-5 w-full md:w-auto">Get started</a>
+  <a href="/contact/" class="font-sans text-base font-bold tracking-wider text-white uppercase hover:text-white bg-oof hover:bg-ooflight border-0 px-12 py-5 inline-block w-full md:w-auto">Get started</a>
 </p>
 
 If you know someone else you feel would be interested in coaching, I would greatly appreciate connecting with them. Please feel free to pass this page along.
