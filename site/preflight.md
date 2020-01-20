@@ -20,7 +20,7 @@ Rounding the corner into a new year (decade!) is a natural moment to become refl
 
 Coaching is all about becoming aware of and connecting you to what truly brings you alive. It helps you discover and align to your values, understand how to make powerful choices, and take deliberate action. It's a holistic and often powerfully transformative process that can open you to new insights and possibilities.
 
-Coaching is for anyone and any aspect of life. It can move you forward if you're feeling frustrated or stuck, or help you progress from good to great in areas you're doing well. If you have a career opportunity or role transition to navigate, a complicated relationship to untangle, new health and wellness goals to hit, or simply want to learn how to stay present and grounded despite life's ups and downs, coaching is for you.
+Coaching is for anyone and any aspect of life. It can move you forward if you're feeling frustrated or stuck, or help you progress from good to great in areas you're doing well. If you have a career opportunity or role transition to navigate, a complicated relationship to untangle, new health and wellness goals to hit, or want to learn how to stay present and grounded despite life's ups and downs, coaching is for you.
 
 
 ## The program
@@ -49,7 +49,7 @@ The pilot program is $750 for the entire package described above. This is intend
 Ready to invest in yourself and start living your true potential? Contact me to set up a preliminary no obligation conversation to get the ball rolling.
 
 <p class="text-center my-16">
-  <a href="/contact/" class="font-sans text-base font-bold tracking-wider text-white uppercase hover:text-white bg-oof hover:bg-ooflight border-0 px-12 py-5 w-full md:w-auto">Get started</a>
+  <a href="/contact/" class="font-sans text-base font-bold tracking-wider text-white uppercase hover:text-white bg-oof hover:bg-ooflight border-0 px-12 py-5 inline-block w-full md:w-auto">Get started</a>
 </p>
 
 If you know someone else you feel would be interested in coaching, I would greatly appreciate connecting with them. Please feel free to pass this page along.

@@ -26,10 +26,10 @@ module.exports = eleventyConfig => {
     })
 
     // Nice typography
-    // eleventyConfig.addTransform("typeset", (content) => {
-    //   let cleaned = typeset(content);
-    //   return cleaned;
-    // })
+    eleventyConfig.addTransform("typeset", (content) => {
+      let cleaned = typeset(content);
+      return cleaned;
+    })
 
     // Collections
     // TODO Uncomment when articles are ready
@@ -48,6 +48,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("javascript")
     eleventyConfig.addPassthroughCopy("images")
     eleventyConfig.addPassthroughCopy("fonts")
+    eleventyConfig.addPassthroughCopy("site/_redirects")
 
     // Generate Atom XML feed
     // TODO Uncomment when articles are ready
