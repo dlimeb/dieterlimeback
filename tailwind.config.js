@@ -225,6 +225,7 @@ module.exports = {
     fontFamily: {
       sans: [
         'Jost',
+        'HKGrotesk',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -239,7 +240,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
-        'adobe-garamond-pro',
+        'P',
         'Georgia',
         'Cambria',
         '"Times New Roman"',
@@ -260,11 +261,11 @@ module.exports = {
       sm: '0.875rem',
       base: '1rem',
       lg: '1.125rem',
-      xl: '1.25rem',
+      xl: '1.375rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
-      '5xl': '3.5rem',
+      '5xl': '3.25rem',
       '6xl': '4rem',
     },
     fontWeight: {

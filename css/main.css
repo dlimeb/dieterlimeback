@@ -610,6 +610,56 @@ video {
   }
 }
 
+@font-face {
+  font-family: 'Jost';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url(/fonts/Jost-700-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'P';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url(/fonts/P-Light-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'P';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(/fonts/P-Regular-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'P';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  src: url(/fonts/P-RegularItalic-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'P';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url(/fonts/P-Bold-Web.woff2) format("woff2");
+}
+
 a {
   transition: 0.1s color ease-out;
 }
@@ -630,9 +680,24 @@ article h1 a:hover {
   text-decoration: underline;
 }
 
+article h2,
+article p,
+article ul,
+article ol {
+  font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.375rem;
+}
+
+@media (min-width: 640px) {
+  article h2,
+    article p,
+    article ul,
+    article ol {
+    font-size: 1.5rem;
+  }
+}
+
 article h2 {
-  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
   font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -641,10 +706,20 @@ article h2 {
 article p,
 article ul,
 article ol {
-  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
   margin-bottom: 2rem;
-  line-height: 1.5;
+  line-height: 1.625;
+}
+
+article ul,
+article ol {
+  margin-left: 2rem;
+}
+
+@media (min-width: 640px) {
+  article ul,
+    article ol {
+    margin-left: 0;
+  }
 }
 
 article a {
@@ -683,13 +758,13 @@ article ol {
 }
 
 article .small-caps {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 header a,
 footer a {
   border-width: 0;
-  font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3742,11 +3817,11 @@ footer input[type='submit']:hover {
 }
 
 .font-sans {
-  font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
-  font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-mono {
@@ -8070,7 +8145,7 @@ footer input[type='submit']:hover {
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 .text-2xl {
@@ -8086,7 +8161,7 @@ footer input[type='submit']:hover {
 }
 
 .text-5xl {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
 }
 
 .text-6xl {
@@ -11520,11 +11595,11 @@ footer input[type='submit']:hover {
   }
 
   .sm\:font-sans {
-    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
-    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .sm\:font-mono {
@@ -15848,7 +15923,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-xl {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .sm\:text-2xl {
@@ -15864,7 +15939,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-5xl {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .sm\:text-6xl {
@@ -19299,11 +19374,11 @@ footer input[type='submit']:hover {
   }
 
   .md\:font-sans {
-    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
-    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .md\:font-mono {
@@ -23627,7 +23702,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-xl {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .md\:text-2xl {
@@ -23643,7 +23718,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-5xl {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .md\:text-6xl {
@@ -27078,11 +27153,11 @@ footer input[type='submit']:hover {
   }
 
   .lg\:font-sans {
-    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
-    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .lg\:font-mono {
@@ -31406,7 +31481,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-xl {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .lg\:text-2xl {
@@ -31422,7 +31497,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-5xl {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .lg\:text-6xl {
@@ -34857,11 +34932,11 @@ footer input[type='submit']:hover {
   }
 
   .xl\:font-sans {
-    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
-    font-family: adobe-garamond-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .xl\:font-mono {
@@ -39185,7 +39260,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-xl {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .xl\:text-2xl {
@@ -39201,7 +39276,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-5xl {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .xl\:text-6xl {
