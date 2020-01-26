@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Jost-700-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'P';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/P-Light-Web.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'P';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/P-Regular-Web.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'P';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/P-RegularItalic-Web.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'P';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/P-Bold-Web.woff2) format('woff2');
+}
 
 //==========  Typography ==========//
 a {
@@ -21,14 +51,33 @@ article {
       }
     }
   }
+  h2,
+  p,
+  ul,
+  ol {
+    @apply font-serif text-xl;
+
+    @media (min-width: theme('screens.sm')) {
+      @apply text-2xl;
+    }
+  }
   h2 {
-    @apply font-serif text-2xl font-bold mt-12 mb-4;
+    @apply font-bold mt-12 mb-4;
   }
   p,
   ul,
   ol {
-    @apply font-serif text-2xl mb-8 leading-normal;
+    @apply mb-8 leading-relaxed;
   }
+  ul,
+  ol {
+    @apply ml-8;
+
+    @media (min-width: theme('screens.sm')) {
+      @apply ml-0;
+    }
+  }
+
   a {
     @apply border-b border-solid border-gray-900;
 
