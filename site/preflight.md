@@ -12,7 +12,7 @@ Hello friend,
 
 If you're reading this it's because I feel you might be interested in -- or can help with! -- something new I'm diving into.
 
-As you may know, last year I took steps to bootstrap a new phase of my career and began investigating coaching. While some form of coaching has been in my leadership skillset for years, I wanted to level up more formally, so I took an extensive training course with [CTI](https://coactive.com/), the largest and most established professional coach training organization in the world.  I am now embarking upon a more rigorous certification process, and as part of that I am looking for an initial cohort of clients. I have **5 slots remaining** for a 4 month program starting in March.
+As you may know, last year I took steps to bootstrap a new phase of my career and began investigating coaching. While some form of coaching has been in my leadership skillset for years, I wanted to level up more formally, so I took an extensive training course with [CTI](https://coactive.com/), the largest and most established professional coach training organization in the world.  I am now embarking upon a more rigorous certification process, and as part of that I am looking for an initial cohort of clients. I have **5 spaces remaining** for a 4 month program starting in March.
 
 If you're interested in coaching, or know someone who might be, read on. This is a great opportunity to get a lot of value without paying higher rates.
 
@@ -24,7 +24,6 @@ Coaching is all about becoming aware of and connecting you to what truly brings 
 Coaching is for anyone and any aspect of life. It can move you forward if you're feeling frustrated or stuck, or help you progress from good to great in areas you're doing well. If you have a career opportunity or role transition to navigate, a complicated relationship to untangle, new health and wellness goals to hit, or want to learn how to stay present and grounded despite life's ups and downs, coaching is for you.
 
 We all want to become better versions of ourselves. So pause a moment and check in with yourself: Are all parts of your life where you want them to be? How much are you _focusing_ on creating that better you? What is now the time for?
-
 
 
 ## The program
@@ -45,7 +44,7 @@ Additionally, as part of my certification process I will be under the mentorship
 
 ## Price
 
-The pilot program is $750 for the entire package described above. This is intended to reflect a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. At the same time, it is also heavily discounted to reflect the fact that I am not yet certified. This is a fantastic opportunity to discover what personalized coaching can do for you.
+I am currently offering this program for a **flexible price**. We can have a conversation about what makes sense for your circumstances, while reflecting a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. This is a heavily discounted pricing model to reflect the fact that I am not yet certified, and is a fantastic opportunity to discover what personalized coaching can do for you!
 
 
 ## Interested?
