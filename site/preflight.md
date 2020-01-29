@@ -44,7 +44,7 @@ Additionally, as part of my certification process I will be under the mentorship
 
 ## Price
 
-I am currently offering this program on a **pay what you can** basis. We can have a conversation about what makes sense for your circumstances, while reflecting a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. This is a heavily discounted pricing model to reflect the fact that I am not yet certified, and is a fantastic opportunity to discover what personalized coaching can do for you!
+I am currently offering this program for a **flexible price**. We can have a conversation about what makes sense for your circumstances, while reflecting a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. This is a heavily discounted pricing model to reflect the fact that I am not yet certified, and is a fantastic opportunity to discover what personalized coaching can do for you!
 
 
 ## Interested?
