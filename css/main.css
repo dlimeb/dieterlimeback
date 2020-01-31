@@ -610,56 +610,6 @@ video {
   }
 }
 
-@font-face {
-  font-family: 'Jost';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: url(/fonts/Jost-700-Bold.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'P';
-
-  font-style: normal;
-
-  font-weight: 300;
-
-  src: url(/fonts/P-Light-Web.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'P';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url(/fonts/P-Regular-Web.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'P';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  src: url(/fonts/P-RegularItalic-Web.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: 'P';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: url(/fonts/P-Bold-Web.woff2) format("woff2");
-}
-
 a {
   transition: 0.1s color ease-out;
 }
@@ -684,8 +634,9 @@ article h2,
 article p,
 article ul,
 article ol {
-  font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.375rem;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.007em;
 }
 
 @media (min-width: 640px) {
@@ -693,7 +644,7 @@ article ol {
     article p,
     article ul,
     article ol {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -701,13 +652,14 @@ article h2 {
   font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  letter-spacing: 0;
 }
 
 article p,
 article ul,
 article ol {
   margin-bottom: 2rem;
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
 article ul,
@@ -764,8 +716,8 @@ article .small-caps {
 header a,
 footer a {
   border-width: 0;
-  font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.875rem;
+  font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -790,6 +742,18 @@ footer input[type='submit']:hover {
 
 .home {
   background-image: url(/images/site/paint.jpg);
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 0 7rem;
+  }
 }
 
 .sr-only {
@@ -870,8 +834,8 @@ footer input[type='submit']:hover {
   background-color: #00f;
 }
 
-.bg-ooflight {
-  background-color: #4848FF;
+.bg-oofhover {
+  background-color: #00d;
 }
 
 .bg-gray-100 {
@@ -1123,7 +1087,7 @@ footer input[type='submit']:hover {
 }
 
 .bg-blue-900 {
-  background-color: #142e53;
+  background-color: #000c2e;
 }
 
 .bg-indigo-100 {
@@ -1250,8 +1214,8 @@ footer input[type='submit']:hover {
   background-color: #00f;
 }
 
-.hover\:bg-ooflight:hover {
-  background-color: #4848FF;
+.hover\:bg-oofhover:hover {
+  background-color: #00d;
 }
 
 .hover\:bg-gray-100:hover {
@@ -1503,7 +1467,7 @@ footer input[type='submit']:hover {
 }
 
 .hover\:bg-blue-900:hover {
-  background-color: #142e53;
+  background-color: #000c2e;
 }
 
 .hover\:bg-indigo-100:hover {
@@ -1630,8 +1594,8 @@ footer input[type='submit']:hover {
   background-color: #00f;
 }
 
-.focus\:bg-ooflight:focus {
-  background-color: #4848FF;
+.focus\:bg-oofhover:focus {
+  background-color: #00d;
 }
 
 .focus\:bg-gray-100:focus {
@@ -1883,7 +1847,7 @@ footer input[type='submit']:hover {
 }
 
 .focus\:bg-blue-900:focus {
-  background-color: #142e53;
+  background-color: #000c2e;
 }
 
 .focus\:bg-indigo-100:focus {
@@ -2090,8 +2054,8 @@ footer input[type='submit']:hover {
   border-color: #00f;
 }
 
-.border-ooflight {
-  border-color: #4848FF;
+.border-oofhover {
+  border-color: #00d;
 }
 
 .border-gray-100 {
@@ -2343,7 +2307,7 @@ footer input[type='submit']:hover {
 }
 
 .border-blue-900 {
-  border-color: #142e53;
+  border-color: #000c2e;
 }
 
 .border-indigo-100 {
@@ -2470,8 +2434,8 @@ footer input[type='submit']:hover {
   border-color: #00f;
 }
 
-.hover\:border-ooflight:hover {
-  border-color: #4848FF;
+.hover\:border-oofhover:hover {
+  border-color: #00d;
 }
 
 .hover\:border-gray-100:hover {
@@ -2723,7 +2687,7 @@ footer input[type='submit']:hover {
 }
 
 .hover\:border-blue-900:hover {
-  border-color: #142e53;
+  border-color: #000c2e;
 }
 
 .hover\:border-indigo-100:hover {
@@ -2850,8 +2814,8 @@ footer input[type='submit']:hover {
   border-color: #00f;
 }
 
-.focus\:border-ooflight:focus {
-  border-color: #4848FF;
+.focus\:border-oofhover:focus {
+  border-color: #00d;
 }
 
 .focus\:border-gray-100:focus {
@@ -3103,7 +3067,7 @@ footer input[type='submit']:hover {
 }
 
 .focus\:border-blue-900:focus {
-  border-color: #142e53;
+  border-color: #000c2e;
 }
 
 .focus\:border-indigo-100:focus {
@@ -3817,11 +3781,11 @@ footer input[type='submit']:hover {
 }
 
 .font-sans {
-  font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
-  font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-mono {
@@ -6006,8 +5970,8 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
-.placeholder-ooflight::placeholder {
-  color: #4848FF;
+.placeholder-oofhover::placeholder {
+  color: #00d;
 }
 
 .placeholder-gray-100::placeholder {
@@ -6259,7 +6223,7 @@ footer input[type='submit']:hover {
 }
 
 .placeholder-blue-900::placeholder {
-  color: #142e53;
+  color: #000c2e;
 }
 
 .placeholder-indigo-100::placeholder {
@@ -6386,8 +6350,8 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
-.focus\:placeholder-ooflight:focus::placeholder {
-  color: #4848FF;
+.focus\:placeholder-oofhover:focus::placeholder {
+  color: #00d;
 }
 
 .focus\:placeholder-gray-100:focus::placeholder {
@@ -6639,7 +6603,7 @@ footer input[type='submit']:hover {
 }
 
 .focus\:placeholder-blue-900:focus::placeholder {
-  color: #142e53;
+  color: #000c2e;
 }
 
 .focus\:placeholder-indigo-100:focus::placeholder {
@@ -7004,8 +6968,8 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
-.text-ooflight {
-  color: #4848FF;
+.text-oofhover {
+  color: #00d;
 }
 
 .text-gray-100 {
@@ -7257,7 +7221,7 @@ footer input[type='submit']:hover {
 }
 
 .text-blue-900 {
-  color: #142e53;
+  color: #000c2e;
 }
 
 .text-indigo-100 {
@@ -7384,8 +7348,8 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
-.hover\:text-ooflight:hover {
-  color: #4848FF;
+.hover\:text-oofhover:hover {
+  color: #00d;
 }
 
 .hover\:text-gray-100:hover {
@@ -7637,7 +7601,7 @@ footer input[type='submit']:hover {
 }
 
 .hover\:text-blue-900:hover {
-  color: #142e53;
+  color: #000c2e;
 }
 
 .hover\:text-indigo-100:hover {
@@ -7764,8 +7728,8 @@ footer input[type='submit']:hover {
   color: #00f;
 }
 
-.focus\:text-ooflight:focus {
-  color: #4848FF;
+.focus\:text-oofhover:focus {
+  color: #00d;
 }
 
 .focus\:text-gray-100:focus {
@@ -8017,7 +7981,7 @@ footer input[type='submit']:hover {
 }
 
 .focus\:text-blue-900:focus {
-  color: #142e53;
+  color: #000c2e;
 }
 
 .focus\:text-indigo-100:focus {
@@ -8129,19 +8093,19 @@ footer input[type='submit']:hover {
 }
 
 .text-xs {
-  font-size: 0.75rem;
-}
-
-.text-sm {
   font-size: 0.875rem;
 }
 
-.text-base {
+.text-sm {
   font-size: 1rem;
 }
 
-.text-lg {
+.text-base {
   font-size: 1.125rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
 }
 
 .text-xl {
@@ -8165,7 +8129,7 @@ footer input[type='submit']:hover {
 }
 
 .text-6xl {
-  font-size: 4rem;
+  font-size: 3.75rem;
 }
 
 .italic {
@@ -8648,8 +8612,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .sm\:bg-ooflight {
-    background-color: #4848FF;
+  .sm\:bg-oofhover {
+    background-color: #00d;
   }
 
   .sm\:bg-gray-100 {
@@ -8901,7 +8865,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:bg-blue-900 {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .sm\:bg-indigo-100 {
@@ -9028,8 +8992,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .sm\:hover\:bg-ooflight:hover {
-    background-color: #4848FF;
+  .sm\:hover\:bg-oofhover:hover {
+    background-color: #00d;
   }
 
   .sm\:hover\:bg-gray-100:hover {
@@ -9281,7 +9245,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:hover\:bg-blue-900:hover {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .sm\:hover\:bg-indigo-100:hover {
@@ -9408,8 +9372,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .sm\:focus\:bg-ooflight:focus {
-    background-color: #4848FF;
+  .sm\:focus\:bg-oofhover:focus {
+    background-color: #00d;
   }
 
   .sm\:focus\:bg-gray-100:focus {
@@ -9661,7 +9625,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:focus\:bg-blue-900:focus {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .sm\:focus\:bg-indigo-100:focus {
@@ -9868,8 +9832,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .sm\:border-ooflight {
-    border-color: #4848FF;
+  .sm\:border-oofhover {
+    border-color: #00d;
   }
 
   .sm\:border-gray-100 {
@@ -10121,7 +10085,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:border-blue-900 {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .sm\:border-indigo-100 {
@@ -10248,8 +10212,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .sm\:hover\:border-ooflight:hover {
-    border-color: #4848FF;
+  .sm\:hover\:border-oofhover:hover {
+    border-color: #00d;
   }
 
   .sm\:hover\:border-gray-100:hover {
@@ -10501,7 +10465,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:hover\:border-blue-900:hover {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .sm\:hover\:border-indigo-100:hover {
@@ -10628,8 +10592,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .sm\:focus\:border-ooflight:focus {
-    border-color: #4848FF;
+  .sm\:focus\:border-oofhover:focus {
+    border-color: #00d;
   }
 
   .sm\:focus\:border-gray-100:focus {
@@ -10881,7 +10845,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:focus\:border-blue-900:focus {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .sm\:focus\:border-indigo-100:focus {
@@ -11595,11 +11559,11 @@ footer input[type='submit']:hover {
   }
 
   .sm\:font-sans {
-    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
-    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .sm\:font-mono {
@@ -13784,8 +13748,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .sm\:placeholder-ooflight::placeholder {
-    color: #4848FF;
+  .sm\:placeholder-oofhover::placeholder {
+    color: #00d;
   }
 
   .sm\:placeholder-gray-100::placeholder {
@@ -14037,7 +14001,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:placeholder-blue-900::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .sm\:placeholder-indigo-100::placeholder {
@@ -14164,8 +14128,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .sm\:focus\:placeholder-ooflight:focus::placeholder {
-    color: #4848FF;
+  .sm\:focus\:placeholder-oofhover:focus::placeholder {
+    color: #00d;
   }
 
   .sm\:focus\:placeholder-gray-100:focus::placeholder {
@@ -14417,7 +14381,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:focus\:placeholder-blue-900:focus::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .sm\:focus\:placeholder-indigo-100:focus::placeholder {
@@ -14782,8 +14746,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .sm\:text-ooflight {
-    color: #4848FF;
+  .sm\:text-oofhover {
+    color: #00d;
   }
 
   .sm\:text-gray-100 {
@@ -15035,7 +14999,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-blue-900 {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .sm\:text-indigo-100 {
@@ -15162,8 +15126,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .sm\:hover\:text-ooflight:hover {
-    color: #4848FF;
+  .sm\:hover\:text-oofhover:hover {
+    color: #00d;
   }
 
   .sm\:hover\:text-gray-100:hover {
@@ -15415,7 +15379,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:hover\:text-blue-900:hover {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .sm\:hover\:text-indigo-100:hover {
@@ -15542,8 +15506,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .sm\:focus\:text-ooflight:focus {
-    color: #4848FF;
+  .sm\:focus\:text-oofhover:focus {
+    color: #00d;
   }
 
   .sm\:focus\:text-gray-100:focus {
@@ -15795,7 +15759,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:focus\:text-blue-900:focus {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .sm\:focus\:text-indigo-100:focus {
@@ -15907,19 +15871,19 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-xs {
-    font-size: 0.75rem;
-  }
-
-  .sm\:text-sm {
     font-size: 0.875rem;
   }
 
-  .sm\:text-base {
+  .sm\:text-sm {
     font-size: 1rem;
   }
 
-  .sm\:text-lg {
+  .sm\:text-base {
     font-size: 1.125rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.25rem;
   }
 
   .sm\:text-xl {
@@ -15943,7 +15907,7 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-6xl {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   .sm\:italic {
@@ -16427,8 +16391,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .md\:bg-ooflight {
-    background-color: #4848FF;
+  .md\:bg-oofhover {
+    background-color: #00d;
   }
 
   .md\:bg-gray-100 {
@@ -16680,7 +16644,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:bg-blue-900 {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .md\:bg-indigo-100 {
@@ -16807,8 +16771,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .md\:hover\:bg-ooflight:hover {
-    background-color: #4848FF;
+  .md\:hover\:bg-oofhover:hover {
+    background-color: #00d;
   }
 
   .md\:hover\:bg-gray-100:hover {
@@ -17060,7 +17024,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:hover\:bg-blue-900:hover {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .md\:hover\:bg-indigo-100:hover {
@@ -17187,8 +17151,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .md\:focus\:bg-ooflight:focus {
-    background-color: #4848FF;
+  .md\:focus\:bg-oofhover:focus {
+    background-color: #00d;
   }
 
   .md\:focus\:bg-gray-100:focus {
@@ -17440,7 +17404,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:focus\:bg-blue-900:focus {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .md\:focus\:bg-indigo-100:focus {
@@ -17647,8 +17611,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .md\:border-ooflight {
-    border-color: #4848FF;
+  .md\:border-oofhover {
+    border-color: #00d;
   }
 
   .md\:border-gray-100 {
@@ -17900,7 +17864,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:border-blue-900 {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .md\:border-indigo-100 {
@@ -18027,8 +17991,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .md\:hover\:border-ooflight:hover {
-    border-color: #4848FF;
+  .md\:hover\:border-oofhover:hover {
+    border-color: #00d;
   }
 
   .md\:hover\:border-gray-100:hover {
@@ -18280,7 +18244,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:hover\:border-blue-900:hover {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .md\:hover\:border-indigo-100:hover {
@@ -18407,8 +18371,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .md\:focus\:border-ooflight:focus {
-    border-color: #4848FF;
+  .md\:focus\:border-oofhover:focus {
+    border-color: #00d;
   }
 
   .md\:focus\:border-gray-100:focus {
@@ -18660,7 +18624,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:focus\:border-blue-900:focus {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .md\:focus\:border-indigo-100:focus {
@@ -19374,11 +19338,11 @@ footer input[type='submit']:hover {
   }
 
   .md\:font-sans {
-    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
-    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .md\:font-mono {
@@ -21563,8 +21527,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .md\:placeholder-ooflight::placeholder {
-    color: #4848FF;
+  .md\:placeholder-oofhover::placeholder {
+    color: #00d;
   }
 
   .md\:placeholder-gray-100::placeholder {
@@ -21816,7 +21780,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:placeholder-blue-900::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .md\:placeholder-indigo-100::placeholder {
@@ -21943,8 +21907,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .md\:focus\:placeholder-ooflight:focus::placeholder {
-    color: #4848FF;
+  .md\:focus\:placeholder-oofhover:focus::placeholder {
+    color: #00d;
   }
 
   .md\:focus\:placeholder-gray-100:focus::placeholder {
@@ -22196,7 +22160,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:focus\:placeholder-blue-900:focus::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .md\:focus\:placeholder-indigo-100:focus::placeholder {
@@ -22561,8 +22525,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .md\:text-ooflight {
-    color: #4848FF;
+  .md\:text-oofhover {
+    color: #00d;
   }
 
   .md\:text-gray-100 {
@@ -22814,7 +22778,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-blue-900 {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .md\:text-indigo-100 {
@@ -22941,8 +22905,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .md\:hover\:text-ooflight:hover {
-    color: #4848FF;
+  .md\:hover\:text-oofhover:hover {
+    color: #00d;
   }
 
   .md\:hover\:text-gray-100:hover {
@@ -23194,7 +23158,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:hover\:text-blue-900:hover {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .md\:hover\:text-indigo-100:hover {
@@ -23321,8 +23285,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .md\:focus\:text-ooflight:focus {
-    color: #4848FF;
+  .md\:focus\:text-oofhover:focus {
+    color: #00d;
   }
 
   .md\:focus\:text-gray-100:focus {
@@ -23574,7 +23538,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:focus\:text-blue-900:focus {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .md\:focus\:text-indigo-100:focus {
@@ -23686,19 +23650,19 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-xs {
-    font-size: 0.75rem;
-  }
-
-  .md\:text-sm {
     font-size: 0.875rem;
   }
 
-  .md\:text-base {
+  .md\:text-sm {
     font-size: 1rem;
   }
 
-  .md\:text-lg {
+  .md\:text-base {
     font-size: 1.125rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.25rem;
   }
 
   .md\:text-xl {
@@ -23722,7 +23686,7 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-6xl {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   .md\:italic {
@@ -24206,8 +24170,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .lg\:bg-ooflight {
-    background-color: #4848FF;
+  .lg\:bg-oofhover {
+    background-color: #00d;
   }
 
   .lg\:bg-gray-100 {
@@ -24459,7 +24423,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:bg-blue-900 {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .lg\:bg-indigo-100 {
@@ -24586,8 +24550,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .lg\:hover\:bg-ooflight:hover {
-    background-color: #4848FF;
+  .lg\:hover\:bg-oofhover:hover {
+    background-color: #00d;
   }
 
   .lg\:hover\:bg-gray-100:hover {
@@ -24839,7 +24803,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:hover\:bg-blue-900:hover {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .lg\:hover\:bg-indigo-100:hover {
@@ -24966,8 +24930,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .lg\:focus\:bg-ooflight:focus {
-    background-color: #4848FF;
+  .lg\:focus\:bg-oofhover:focus {
+    background-color: #00d;
   }
 
   .lg\:focus\:bg-gray-100:focus {
@@ -25219,7 +25183,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:focus\:bg-blue-900:focus {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .lg\:focus\:bg-indigo-100:focus {
@@ -25426,8 +25390,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .lg\:border-ooflight {
-    border-color: #4848FF;
+  .lg\:border-oofhover {
+    border-color: #00d;
   }
 
   .lg\:border-gray-100 {
@@ -25679,7 +25643,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:border-blue-900 {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .lg\:border-indigo-100 {
@@ -25806,8 +25770,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .lg\:hover\:border-ooflight:hover {
-    border-color: #4848FF;
+  .lg\:hover\:border-oofhover:hover {
+    border-color: #00d;
   }
 
   .lg\:hover\:border-gray-100:hover {
@@ -26059,7 +26023,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:hover\:border-blue-900:hover {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .lg\:hover\:border-indigo-100:hover {
@@ -26186,8 +26150,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .lg\:focus\:border-ooflight:focus {
-    border-color: #4848FF;
+  .lg\:focus\:border-oofhover:focus {
+    border-color: #00d;
   }
 
   .lg\:focus\:border-gray-100:focus {
@@ -26439,7 +26403,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:focus\:border-blue-900:focus {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .lg\:focus\:border-indigo-100:focus {
@@ -27153,11 +27117,11 @@ footer input[type='submit']:hover {
   }
 
   .lg\:font-sans {
-    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
-    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .lg\:font-mono {
@@ -29342,8 +29306,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .lg\:placeholder-ooflight::placeholder {
-    color: #4848FF;
+  .lg\:placeholder-oofhover::placeholder {
+    color: #00d;
   }
 
   .lg\:placeholder-gray-100::placeholder {
@@ -29595,7 +29559,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:placeholder-blue-900::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .lg\:placeholder-indigo-100::placeholder {
@@ -29722,8 +29686,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .lg\:focus\:placeholder-ooflight:focus::placeholder {
-    color: #4848FF;
+  .lg\:focus\:placeholder-oofhover:focus::placeholder {
+    color: #00d;
   }
 
   .lg\:focus\:placeholder-gray-100:focus::placeholder {
@@ -29975,7 +29939,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:focus\:placeholder-blue-900:focus::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .lg\:focus\:placeholder-indigo-100:focus::placeholder {
@@ -30340,8 +30304,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .lg\:text-ooflight {
-    color: #4848FF;
+  .lg\:text-oofhover {
+    color: #00d;
   }
 
   .lg\:text-gray-100 {
@@ -30593,7 +30557,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-blue-900 {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .lg\:text-indigo-100 {
@@ -30720,8 +30684,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .lg\:hover\:text-ooflight:hover {
-    color: #4848FF;
+  .lg\:hover\:text-oofhover:hover {
+    color: #00d;
   }
 
   .lg\:hover\:text-gray-100:hover {
@@ -30973,7 +30937,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:hover\:text-blue-900:hover {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .lg\:hover\:text-indigo-100:hover {
@@ -31100,8 +31064,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .lg\:focus\:text-ooflight:focus {
-    color: #4848FF;
+  .lg\:focus\:text-oofhover:focus {
+    color: #00d;
   }
 
   .lg\:focus\:text-gray-100:focus {
@@ -31353,7 +31317,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:focus\:text-blue-900:focus {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .lg\:focus\:text-indigo-100:focus {
@@ -31465,19 +31429,19 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-xs {
-    font-size: 0.75rem;
-  }
-
-  .lg\:text-sm {
     font-size: 0.875rem;
   }
 
-  .lg\:text-base {
+  .lg\:text-sm {
     font-size: 1rem;
   }
 
-  .lg\:text-lg {
+  .lg\:text-base {
     font-size: 1.125rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.25rem;
   }
 
   .lg\:text-xl {
@@ -31501,7 +31465,7 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-6xl {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   .lg\:italic {
@@ -31985,8 +31949,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .xl\:bg-ooflight {
-    background-color: #4848FF;
+  .xl\:bg-oofhover {
+    background-color: #00d;
   }
 
   .xl\:bg-gray-100 {
@@ -32238,7 +32202,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:bg-blue-900 {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .xl\:bg-indigo-100 {
@@ -32365,8 +32329,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .xl\:hover\:bg-ooflight:hover {
-    background-color: #4848FF;
+  .xl\:hover\:bg-oofhover:hover {
+    background-color: #00d;
   }
 
   .xl\:hover\:bg-gray-100:hover {
@@ -32618,7 +32582,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:hover\:bg-blue-900:hover {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .xl\:hover\:bg-indigo-100:hover {
@@ -32745,8 +32709,8 @@ footer input[type='submit']:hover {
     background-color: #00f;
   }
 
-  .xl\:focus\:bg-ooflight:focus {
-    background-color: #4848FF;
+  .xl\:focus\:bg-oofhover:focus {
+    background-color: #00d;
   }
 
   .xl\:focus\:bg-gray-100:focus {
@@ -32998,7 +32962,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:focus\:bg-blue-900:focus {
-    background-color: #142e53;
+    background-color: #000c2e;
   }
 
   .xl\:focus\:bg-indigo-100:focus {
@@ -33205,8 +33169,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .xl\:border-ooflight {
-    border-color: #4848FF;
+  .xl\:border-oofhover {
+    border-color: #00d;
   }
 
   .xl\:border-gray-100 {
@@ -33458,7 +33422,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:border-blue-900 {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .xl\:border-indigo-100 {
@@ -33585,8 +33549,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .xl\:hover\:border-ooflight:hover {
-    border-color: #4848FF;
+  .xl\:hover\:border-oofhover:hover {
+    border-color: #00d;
   }
 
   .xl\:hover\:border-gray-100:hover {
@@ -33838,7 +33802,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:hover\:border-blue-900:hover {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .xl\:hover\:border-indigo-100:hover {
@@ -33965,8 +33929,8 @@ footer input[type='submit']:hover {
     border-color: #00f;
   }
 
-  .xl\:focus\:border-ooflight:focus {
-    border-color: #4848FF;
+  .xl\:focus\:border-oofhover:focus {
+    border-color: #00d;
   }
 
   .xl\:focus\:border-gray-100:focus {
@@ -34218,7 +34182,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:focus\:border-blue-900:focus {
-    border-color: #142e53;
+    border-color: #000c2e;
   }
 
   .xl\:focus\:border-indigo-100:focus {
@@ -34932,11 +34896,11 @@ footer input[type='submit']:hover {
   }
 
   .xl\:font-sans {
-    font-family: Jost, HKGrotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
-    font-family: P, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .xl\:font-mono {
@@ -37121,8 +37085,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .xl\:placeholder-ooflight::placeholder {
-    color: #4848FF;
+  .xl\:placeholder-oofhover::placeholder {
+    color: #00d;
   }
 
   .xl\:placeholder-gray-100::placeholder {
@@ -37374,7 +37338,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:placeholder-blue-900::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .xl\:placeholder-indigo-100::placeholder {
@@ -37501,8 +37465,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .xl\:focus\:placeholder-ooflight:focus::placeholder {
-    color: #4848FF;
+  .xl\:focus\:placeholder-oofhover:focus::placeholder {
+    color: #00d;
   }
 
   .xl\:focus\:placeholder-gray-100:focus::placeholder {
@@ -37754,7 +37718,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:focus\:placeholder-blue-900:focus::placeholder {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .xl\:focus\:placeholder-indigo-100:focus::placeholder {
@@ -38119,8 +38083,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .xl\:text-ooflight {
-    color: #4848FF;
+  .xl\:text-oofhover {
+    color: #00d;
   }
 
   .xl\:text-gray-100 {
@@ -38372,7 +38336,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-blue-900 {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .xl\:text-indigo-100 {
@@ -38499,8 +38463,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .xl\:hover\:text-ooflight:hover {
-    color: #4848FF;
+  .xl\:hover\:text-oofhover:hover {
+    color: #00d;
   }
 
   .xl\:hover\:text-gray-100:hover {
@@ -38752,7 +38716,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:hover\:text-blue-900:hover {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .xl\:hover\:text-indigo-100:hover {
@@ -38879,8 +38843,8 @@ footer input[type='submit']:hover {
     color: #00f;
   }
 
-  .xl\:focus\:text-ooflight:focus {
-    color: #4848FF;
+  .xl\:focus\:text-oofhover:focus {
+    color: #00d;
   }
 
   .xl\:focus\:text-gray-100:focus {
@@ -39132,7 +39096,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:focus\:text-blue-900:focus {
-    color: #142e53;
+    color: #000c2e;
   }
 
   .xl\:focus\:text-indigo-100:focus {
@@ -39244,19 +39208,19 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-xs {
-    font-size: 0.75rem;
-  }
-
-  .xl\:text-sm {
     font-size: 0.875rem;
   }
 
-  .xl\:text-base {
+  .xl\:text-sm {
     font-size: 1rem;
   }
 
-  .xl\:text-lg {
+  .xl\:text-base {
     font-size: 1.125rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.25rem;
   }
 
   .xl\:text-xl {
@@ -39280,7 +39244,7 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-6xl {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   .xl\:italic {
