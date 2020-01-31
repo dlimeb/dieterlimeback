@@ -1,6 +1,6 @@
 ---
 layout: article
-meta_title: Preflight
+meta_title: Pilot coaching program
 title: Pilot coaching program
 featured_image: /images/site/open.jpg
 image_caption: Photo by Dylan Gillis on Unsplash
@@ -10,7 +10,7 @@ page_highlight: '#eee'
 
 Hello friend,
 
-If you're reading this it's because I feel you might be interested in -- or can help with! -- something new I'm diving into.
+If you're reading this it's because you're awesome and I feel you might be interested in -- or can help with! -- something new I'm diving into.
 
 As you may know, last year I took steps to bootstrap a new phase of my career and began investigating coaching. While some form of coaching has been in my leadership skillset for years, I wanted to level up more formally, so I took an extensive training course with [CTI](https://coactive.com/), the largest and most established professional coach training organization in the world.  I am now embarking upon a more rigorous certification process, and as part of that I am looking for an initial cohort of clients. I have **5 spaces remaining** for a 4 month program starting in March.
 
@@ -30,21 +30,19 @@ We all want to become better versions of ourselves. So pause a moment and check 
 
 Coaching is best perceived as a process. While many people start creating new awareness and initial change in a short time, to refine and sustain this change takes longer.
 
-The program I'm offering will run for approximately 4 months, can be held in person or via phone/video call, and includes:
+The program I'm offering will run for approximately 3 months, can be held in person or via phone/video call, and includes:
 
-- 10 individual sessions biweekly (~1 hour each)
+- 6 individual sessions, held biweekly (~1 hour each)
 - Personalized coaching tailored to your needs, context, and goals
 - Recordings or notes of each session for follow-up review
 - Resources and reference material
 - Email or text support between sessions
 
-This is not coaching where I judge, criticize, give you advice, or nag you. Instead you will have me as your champion, supporter, listener, and accountability partner as we work _together_ to discover new clarity, confidence, and ways of being for you. You can expect me to adhere to and uphold the [ICF Code of Ethics](https://coachfederation.org/code-of-ethics). I will be deeply committed to you, act professionally, respect your circumstances, and hold all our interactions in the strictest of confidentiality.
-
-Additionally, as part of my certification process I will be under the mentorship of a Master Coach.
+This is not coaching where I judge, criticize, give you advice, or nag you. Instead you will have me as your champion, supporter, listener, and accountability partner as we work together to discover new clarity, confidence, and ways of being for you. You can expect me to adhere to and uphold the [ICF Code of Ethics](https://coachfederation.org/code-of-ethics). I will be deeply committed to you, act professionally, respect your circumstances, and hold all our interactions in the strictest of confidentiality. Additionally, as part of my certification process I will be under the mentorship of a Master Coach.
 
 ## Price
 
-I am currently offering this program for a **flexible price**. We can have a conversation about what makes sense for your circumstances, while reflecting a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. This is a heavily discounted pricing model to reflect the fact that I am not yet certified, and is a fantastic opportunity to discover what personalized coaching can do for you!
+The pilot program is **$495** for the entire package described above. This is intended to reflect a respect for our time, your commitment to your growth, my extensive experience in leadership and management, and my 100+ hours of intensive training and practice. At the same time, this is a heavily discounted pricing model to reflect the fact that I am not yet certified. This is a fantastic opportunity to discover what personalized coaching can do for you.
 
 
 ## Interested?
@@ -52,7 +50,7 @@ I am currently offering this program for a **flexible price**. We can have a con
 Ready to invest in yourself and start living your true potential? Contact me to set up a preliminary no obligation conversation to get the ball rolling.
 
 <p class="text-center my-16">
-  <a href="/contact/" class="font-sans text-base font-bold tracking-wider text-white uppercase hover:text-white bg-oof hover:bg-ooflight border-0 px-12 py-5 inline-block w-full md:w-auto">Get started</a>
+  <a href="/contact/" class="font-sans text-base font-bold tracking-wide text-white uppercase hover:text-white bg-oof hover:bg-oofhover border-0 px-12 py-5 inline-block w-full md:w-auto">Get started</a>
 </p>
 
 If you know someone else you feel would be interested in coaching, I would love to connect with them. Please feel free to pass this page along.

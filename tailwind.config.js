@@ -16,7 +16,7 @@ module.exports = {
       white: '#fff',
 
       oof: '#00f',
-      ooflight: '#4848FF',
+      oofhover: '#00d',
 
       gray: {
         100: '#f4f4f4',
@@ -93,7 +93,7 @@ module.exports = {
         600: '#3182ce',
         700: '#2b6cb0',
         800: '#2c5282',
-        900: '#142e53',
+        900: '#000c2e',
       },
       indigo: {
         100: '#ebf4ff',
@@ -225,7 +225,6 @@ module.exports = {
     fontFamily: {
       sans: [
         'Jost',
-        'HKGrotesk',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -240,7 +239,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
-        'P',
+        'source-serif-pro',
         'Georgia',
         'Cambria',
         '"Times New Roman"',
@@ -257,16 +256,16 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
+      xs: '0.875rem',
+      sm: '1rem',
+      base: '1.125rem',
+      lg: '1.25rem',
       xl: '1.375rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3.25rem',
-      '6xl': '4rem',
+      '6xl': '3.75rem',
     },
     fontWeight: {
       hairline: '100',
