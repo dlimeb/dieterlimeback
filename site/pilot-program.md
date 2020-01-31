@@ -49,7 +49,7 @@ The pilot program is **$495** for the entire package described above. This is in
 
 Ready to invest in yourself and start living your true potential? Contact me to set up a preliminary no obligation conversation to get the ball rolling.
 
-<p class="text-center my-16">
+<p class="text-center my-8 md:my-16">
   <a href="/contact/" class="font-sans text-base font-bold tracking-wide text-white uppercase hover:text-white bg-oof hover:bg-oofhover border-0 px-12 py-5 inline-block w-full md:w-auto">Get started</a>
 </p>
 
