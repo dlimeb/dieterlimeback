@@ -717,10 +717,17 @@ header a,
 footer a {
   border-width: 0;
   font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+@media (min-width: 640px) {
+  header a,
+    footer a {
+    font-size: 1rem;
+  }
 }
 
 header a:hover,
@@ -8121,15 +8128,15 @@ footer input[type='submit']:hover {
 }
 
 .text-4xl {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 .text-5xl {
-  font-size: 3.25rem;
+  font-size: 3.5rem;
 }
 
 .text-6xl {
-  font-size: 3.75rem;
+  font-size: 5rem;
 }
 
 .italic {
@@ -15899,15 +15906,15 @@ footer input[type='submit']:hover {
   }
 
   .sm\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .sm\:text-5xl {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .sm\:text-6xl {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
 
   .sm\:italic {
@@ -23678,15 +23685,15 @@ footer input[type='submit']:hover {
   }
 
   .md\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .md\:text-5xl {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .md\:text-6xl {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
 
   .md\:italic {
@@ -31457,15 +31464,15 @@ footer input[type='submit']:hover {
   }
 
   .lg\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .lg\:text-5xl {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .lg\:text-6xl {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
 
   .lg\:italic {
@@ -39236,15 +39243,15 @@ footer input[type='submit']:hover {
   }
 
   .xl\:text-4xl {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .xl\:text-5xl {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .xl\:text-6xl {
-    font-size: 3.75rem;
+    font-size: 5rem;
   }
 
   .xl\:italic {
