@@ -3,7 +3,11 @@
 
 header a,
 footer a {
-  @apply border-0 font-sans text-sm font-bold uppercase tracking-wider;
+  @apply border-0 font-sans text-xs font-bold uppercase tracking-wider;
+
+  @media (min-width: theme('screens.sm')) {
+    @apply text-sm;
+  }
 
   &:hover {
     @apply no-underline border-b border-solid;
