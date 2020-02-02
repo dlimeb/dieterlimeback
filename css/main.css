@@ -610,6 +610,24 @@ video {
   }
 }
 
+@keyframes slide-down {
+  0%,
+  30% {
+    margin-top: 0rem;
+    opacity: 0;
+  }
+
+  80% {
+    margin-top: 0.8rem;
+    opacity: 0.8;
+  }
+
+  100% {
+    margin-top: 1rem;
+    opacity: 1.0;
+  }
+}
+
 a {
   transition: 0.1s color ease-out;
 }
@@ -723,13 +741,6 @@ footer a {
   letter-spacing: 0.05em;
 }
 
-@media (min-width: 640px) {
-  header a,
-    footer a {
-    font-size: 1rem;
-  }
-}
-
 header a:hover,
   footer a:hover {
   text-decoration: none;
@@ -747,6 +758,79 @@ footer input[type='submit']:hover {
   cursor: pointer;
 }
 
+.mobile-nav__toggle {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  margin-left: auto;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.mobile-nav__toggle span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.mobile-nav__toggle span:nth-child(1) {
+  top: 1px;
+}
+
+.mobile-nav__toggle span:nth-child(2),
+.mobile-nav__toggle span:nth-child(3) {
+  top: 7px;
+}
+
+.mobile-nav__toggle span:nth-child(4) {
+  top: 13px;
+}
+
+.mobile-nav.is-open .mobile-nav__toggle span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.mobile-nav.is-open .mobile-nav__toggle span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.mobile-nav.is-open .mobile-nav__toggle span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.mobile-nav.is-open .mobile-nav__toggle span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.mobile-nav.is-open .nav-items {
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000c2e;
+  animation: slide-down .3s ease-in-out forwards;
+}
+
+.mobile-nav.is-open .nav-items li {
+  display: block;
+  text-align: center;
+  margin: 0.25rem 0;
+}
+
 .home {
   background-image: url(/images/site/paint.jpg);
 }
@@ -761,6 +845,32 @@ footer input[type='submit']:hover {
   body {
     padding: 0 7rem;
   }
+}
+
+.faq__question {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.faq__answer {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  transform: translateY(4px);
+  transform-origin: 0 0;
+}
+
+.is-open > .faq__answer {
+  visibility: visible;
+  height: auto;
+  animation: slide-down .3s ease-in-out forwards;
+}
+
+.faq__question:hover {
+  cursor: pointer;
 }
 
 .sr-only {

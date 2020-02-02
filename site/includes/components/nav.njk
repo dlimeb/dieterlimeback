@@ -1,12 +1,18 @@
-<nav id="nav" class="flex0">
-  <ul class="flex flex-row items-center list-reset">
-    {% for item in navigation.main %}
-      <li class="ml-4">
-        <a href="{{ item.url | safe }}" class="{% if page.url == item.url %}text-black{% endif %}
-            "{% if page.url == item.url %} aria-current="page"{% endif %}>
-            {{ item.label }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+<div class="sm:flex md:hidden">
+  <div class="mobile-nav__toggle" aria-controls="navigation" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<ul class="nav-items list-reset hidden md:flex">
+  {% for item in navigation.main %}
+    <li class="ml-4">
+      <a href="{{ item.url | safe }}" class="{% if page.url == item.url %}text-black{% endif %}
+          "{% if page.url == item.url %} aria-current="page"{% endif %}>
+          {{ item.label }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

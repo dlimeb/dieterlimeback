@@ -43,11 +43,11 @@
   </div>
 
   {# include scripts #}
-  {# {% if helpers.environment == "development" %}
-  <script src="/javascript/main.js"></script>
+  {% if helpers.environment == "development" %}
+    <script src="/javascript/main.js"></script>
   {% else %}
-  <script src="/javascript/main.min.js"></script>
-  {% endif %} #}
+    <script src="/javascript/main.min.js"></script>
+  {% endif %}
 
 </body>
 </html>
