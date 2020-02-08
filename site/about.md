@@ -2,6 +2,7 @@
 layout: article
 meta_title: About
 meta_description: About page description
+hidden: true
 ---
 
 ## bio

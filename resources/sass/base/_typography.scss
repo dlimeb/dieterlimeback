@@ -79,6 +79,10 @@ ol {
 .dl-heading__secondary {
   @apply font-serif font-bold text-3xl leading-none tracking-normal;
   hyphens: none;
+
+  @media (min-width: theme('screens.md')) {
+    @apply text-4xl;
+  }
 }
 .dl-heading__subhead {
   @apply font-sans uppercase text-sm tracking-widest text-blue-400 mt-32 mb-12;

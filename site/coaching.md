@@ -2,6 +2,7 @@
 layout: article
 title: Coaching
 meta_description: Discover coaching and what it can do for you
+hidden: true
 ---
 
 Coaching is a holistic and powerfully transformative process. Discover how to:
