@@ -1,79 +1,85 @@
+//
+//========== Typography ==========//
+//
 
-//==========  Typography ==========//
+h1 {
+  hyphens: none;
 
+  a {
+    @apply border-0;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+}
+h2,
+p,
+ul,
+ol,
+.dl-text__body {
+  @apply font-serif text-base leading-snug;
+  letter-spacing: -0.007em;
+  hyphens: none;
+
+  @media (min-width: theme('screens.sm')) {
+    @apply text-lg;
+  }
+}
+h2 {
+  @apply font-bold mt-12 mb-4 tracking-normal;
+}
+p,
+ul,
+ol {
+  @apply mb-8 leading-normal;
+}
+ul,
+ol {
+  @apply ml-8;
+
+  @media (min-width: theme('screens.sm')) {
+    @apply ml-0;
+  }
+}
 a {
+  @apply border-b border-solid border-gray-900;
   transition: 0.1s color ease-out;
 
   &:hover,
   &:active {
     color: theme('colors.oof');
+    border-color: theme('colors.oof');
   }
 }
+em {
+  @apply italic;
+}
+strong {
+  @apply font-bold;
+}
+blockquote {
+  @apply my-12 pl-8 pr-12 italic;
+}
+ul {
+  @apply list-disc;
+}
+ol {
+  @apply list-decimal;
+}
+.small-caps {
+  @apply text-xl;
+}
 
-article {
-  h1 {
-    hyphens: none;
 
-    a {
-      @apply border-0;
+//
+// Extracted styles
+//
 
-      &:hover {
-        @apply underline;
-      }
-    }
-  }
-  h2,
-  p,
-  ul,
-  ol {
-    @apply font-serif text-lg;
-    letter-spacing: -0.007em;
-
-    @media (min-width: theme('screens.sm')) {
-      @apply text-xl;
-    }
-  }
-  h2 {
-    @apply font-bold mt-12 mb-4 tracking-normal;
-  }
-  p,
-  ul,
-  ol {
-    @apply mb-8 leading-normal;
-  }
-  ul,
-  ol {
-    @apply ml-8;
-
-    @media (min-width: theme('screens.sm')) {
-      @apply ml-0;
-    }
-  }
-
-  a {
-    @apply border-b border-solid border-gray-900;
-
-    &:hover {
-      color: theme('colors.oof');
-      border-color: theme('colors.oof');
-    }
-  }
-  em {
-    @apply italic;
-  }
-  strong {
-    @apply font-bold;
-  }
-  blockquote {
-    @apply my-12 pl-8 pr-12 italic;
-  }
-  ul {
-    @apply list-disc;
-  }
-  ol {
-    @apply list-decimal;
-  }
-  .small-caps {
-    @apply text-xl;
-  }
+.dl-heading__secondary {
+  @apply font-serif font-bold text-3xl leading-none tracking-normal;
+  hyphens: none;
+}
+.dl-heading__subhead {
+  @apply font-sans uppercase text-sm tracking-widest text-blue-400 mt-32 mb-12;
 }

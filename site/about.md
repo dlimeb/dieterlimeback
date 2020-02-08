@@ -4,16 +4,20 @@ meta_title: About
 meta_description: About page description
 ---
 
-## Dieter
+## bio
 
+varied profesisonal background -- creative fields, tech industry, education
 
-varied profesisonal background
-
+### creative fields
 jazz
-
 martial arts
+self taught developer an ddesige
+
+### tech
 
 20 years experience in the cutting edge technology software ind
+
+
 
 design (and how it relates coaching)
 
@@ -25,11 +29,19 @@ education
 
 startups / future of work, worked with people entering and navigating the fast moving tech industry
 
+experience with burnout, feeling stuck, golden handcuffs, not feeling fulfilled
+design, tech, music
+
+
 no script and no set path or guarnateed asnwers. requires constant learning, flexing, and updating yourself. self awareness
 
-experience with burnout, feeling stuck, golden handcuffs, not feeling fulfilled
 
 father of 2 teenage girls, married for 20 years
+
+training and cert w CTI coaacive
+
+
+---
 
 I am a **Professional Certified Coach** credentialed by the International Coach Federation, a **Certified Integral Coach** through [New Ventures West](http://newventureswest.com/), and certified coach in Social and Emotional Intelligence assessments.
 
@@ -44,5 +56,3 @@ Influenced by a multitude of coaches, teachers, leaders and inspiring humans, pa
 has over 25 years of experience in business and almost two decades of experience in leadership roles including leading both teams and businesses. ’s natural ability to connect, her high emotional intelligence and her drive to deliver value to others has led to her success across partnerships, business development, sales and product roles.  as well as having worked for a number of strong leaders, has influenced her belief system and her understanding of the impact leaders can have on a team and an organization, for good, bad or worse.
 
 Having spent time at both large corporations  and start-ups, has first-hand experience in: leading through ambiguity, change management, hiring & developing people, diversity & inclusion, and scaling a business. But beneath it all is an underlying belief that in order to be a great leader, you must first do the work to know yourself. Self-awareness - understanding your strengths, where you need help, what your biases are and that you do, indeed, have blind spots - is the first step. Without this knowledge, you will not only get in your own way but you will get in the way of your team, your peers and your business.
-
-> testimonial

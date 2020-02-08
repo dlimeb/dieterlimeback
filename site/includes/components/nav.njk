@@ -6,7 +6,7 @@
     <span></span>
   </div>
 </div>
-<ul class="nav-items list-reset hidden md:flex">
+<ul class="nav-items list-none m-0 hidden md:flex">
   {% for item in navigation.main %}
     <li class="ml-4">
       <a href="{{ item.url | safe }}" class="{% if page.url == item.url %}text-black{% endif %}

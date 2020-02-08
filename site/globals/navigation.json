@@ -1,18 +1,6 @@
 {
     "main": [
         {
-            "label": "Coaching",
-            "url": "/coaching/"
-        },
-        {
-            "label": "Plans",
-            "url": "/plans/"
-        },
-        {
-            "label": "About",
-            "url": "/about/"
-        },
-        {
             "label": "Contact",
             "url": "/contact/"
         }

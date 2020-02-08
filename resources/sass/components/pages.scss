@@ -1,16 +1,21 @@
-//========== All pages ==========//
+//
+//========== Pages ==========//
+//
 
+  body {
+    padding: 0 4rem;
+  }
 
-@media (min-width: theme('screens.lg')) {
-  body {
-    padding: 0 3rem;
-  }
-}
-@media (min-width: theme('screens.xl')) {
-  body {
-    padding: 0 7rem;
-  }
-}
+// @media (min-width: theme('screens.lg')) {
+//   body {
+//     padding: 0 3rem;
+//   }
+// }
+// @media (min-width: theme('screens.xl')) {
+//   body {
+//     padding: 0 7rem;
+//   }
+// }
 
 //========== Articles ==========//
 

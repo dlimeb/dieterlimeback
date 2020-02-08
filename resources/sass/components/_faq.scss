@@ -1,9 +1,10 @@
-
-//==========  FAQ ==========//
+//
+//========== FAQ ==========//
+//
 
 .faq {
   &__question {
-    @apply text-4xl mt-6 mb-6 leading-none;
+    @apply font-light text-3xl mt-6 mb-6 leading-none;
   }
 
   &__answer {
