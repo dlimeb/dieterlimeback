@@ -1,0 +1,28 @@
+//
+//========== Buttons ==========//
+//
+
+.dl-button {
+  @apply font-sans font-bold text-sm uppercase tracking-wide text-white border-0 px-12 py-5 inline-block;
+
+  &:hover {
+    @apply text-white;
+  }
+}
+
+.dl-button__primary {
+  @apply bg-oof;
+
+  &:hover {
+    @apply bg-oofhover;
+
+  }
+}
+.dl-button__default {
+  @apply bg-gray-800;
+
+  &:hover {
+    @apply bg-gray-900;
+
+  }
+}

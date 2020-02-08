@@ -1,0 +1,11 @@
+//
+//========== Forms ==========//
+//
+
+.dl-form__label {
+  @apply font-sans uppercase text-sm tracking-wide font-bold;
+}
+.dl-form__input {
+  @apply font-mono text-sm p-4;
+}
+

@@ -1,4 +1,6 @@
-<header id="header" class="container flex flex-row justify-between items-center max-w-4xl py-6 px-4 md:px-8 mx-auto mb-16 md:mb-32" role="banner">
-	{% include "components/logo.njk" %}
-	{# {% include 'components/nav.njk' %} #}
+<header id="header" class="container max-w-5xl py-6 px-4 md:px-8 mx-auto mb-16 md:mb-24" role="banner">
+  <nav id="nav" class="flex flex-row flex-wrap justify-between mobile-nav items-center">
+    {% include "components/logo.njk" %}
+    {% include 'components/nav.njk' %}
+  </nav>
 </header>

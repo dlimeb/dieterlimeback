@@ -1,13 +1,12 @@
-{# <ul class="flex justify-center">
+<ul class="flex list-none justify-center mt-8">
+  <li class="mx-2">
+    <a href="/contact/">Contact</a>
+  </li>
   {% for site, link in site.social_links %}
-    <li class="mr-2">
-      <a href="{{ link | safe }}" class="">
+    <li class="mx-2">
+      <a href="{{ link | safe }}">
         {{ site }}
       </a>
     </li>
   {% endfor %}
-</ul> #}
-
-  {% for site, link in site.social_links %}
-    <a href="{{ link | safe }}" class="mr-2">{{ site }}</a>
-  {% endfor %}
+</ul>
