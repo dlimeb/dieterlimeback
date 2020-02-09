@@ -763,29 +763,42 @@ ol {
   font-size: 1.375rem;
 }
 
+.dl-heading__primary {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .dl-heading__primary {
+    font-size: 3.5rem;
+  }
+}
+
 .dl-heading__secondary {
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 1;
+  font-size: 1.5rem;
+  line-height: 1.25;
   letter-spacing: 0;
   hyphens: none;
 }
 
 @media (min-width: 768px) {
   .dl-heading__secondary {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
-.dl-heading__subhead {
+.dl-heading__pretitle {
   font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.1em;
   color: #63b3ed;
-  margin-top: 8rem;
-  margin-bottom: 3rem;
 }
 
 header a,
@@ -891,9 +904,16 @@ footer input[type='submit']:hover {
 .dl-divider {
   border-top-width: 1px;
   border-style: solid;
-  border-color: #63738a;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.dl-divider--light {
+  border-color: #cbd5e0;
+}
+
+.dl-divider--dark {
+  border-color: #63738a;
 }
 
 .dl-form__label {

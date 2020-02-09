@@ -3,5 +3,11 @@
 //
 
 .dl-divider {
-  @apply border-t border-solid border-gray-600 my-16;
+  @apply border-t border-solid my-16;
+}
+.dl-divider--light {
+  @apply border-gray-400;
+}
+.dl-divider--dark {
+  @apply border-gray-600;
 }
