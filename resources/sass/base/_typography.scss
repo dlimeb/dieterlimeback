@@ -76,14 +76,21 @@ ol {
 // Extracted styles
 //
 
+.dl-heading__primary {
+  @apply font-serif font-normal tracking-tight text-4xl leading-tight;
+
+  @media (min-width: theme('screens.md')) {
+    @apply text-5xl;
+  }
+}
 .dl-heading__secondary {
-  @apply font-serif font-bold text-3xl leading-none tracking-normal;
+  @apply font-serif font-bold text-2xl leading-tight tracking-normal;
   hyphens: none;
 
   @media (min-width: theme('screens.md')) {
-    @apply text-4xl;
+    @apply text-3xl;
   }
 }
-.dl-heading__subhead {
-  @apply font-sans uppercase text-sm tracking-widest text-blue-400 mt-32 mb-12;
+.dl-heading__pretitle {
+  @apply font-sans font-bold uppercase text-sm tracking-widest text-blue-400;
 }
