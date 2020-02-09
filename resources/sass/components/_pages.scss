@@ -1,0 +1,13 @@
+//
+//========== Pages ==========//
+//
+
+body {
+  padding: 0 1rem;
+}
+
+@media (min-width: theme('screens.lg')) {
+  body {
+    padding: 0 3rem;
+  }
+}

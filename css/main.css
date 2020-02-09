@@ -938,7 +938,13 @@ footer input[type='submit']:hover {
 }
 
 body {
-  padding: 0 4rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0 3rem;
+  }
 }
 
 .sr-only {
