@@ -2,7 +2,7 @@
 
   This is a workaround file to whitelist some TailwindCSS classes that appear in markdown files. Without them appearing here, PurgeCSS will strip them and the built version of the site will be missing them.
 
-  TODO: Remove this hack file and extract tailwind out of markdown to a custom class, so the markdown file has eg <button class="my-btn">
+  TODO: Remove this hack file and extract tailwind out of markdown to a custom class, so the markdown file has eg <button class="my-btn">. Note this approach does not solve for is-open, since javascript adds that (it's not in the HTML that PurgeCSS looks at)
  #}
 
 px-12
