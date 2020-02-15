@@ -633,6 +633,7 @@ video {
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.025em;
   color: #fff;
   border-width: 0;

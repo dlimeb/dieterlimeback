@@ -3,7 +3,7 @@
 //
 
 .dl-button {
-  @apply font-sans font-bold text-sm uppercase tracking-wide text-white border-0 px-12 py-5 inline-block;
+  @apply font-sans font-bold text-sm uppercase text-center tracking-wide text-white border-0 px-12 py-5 inline-block;
 
   &:hover {
     @apply text-white;
