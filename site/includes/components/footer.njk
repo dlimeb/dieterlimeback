@@ -1,9 +1,9 @@
-<footer id="footer" class="w-full max-w-6xl mx-auto mb-32 px-2 border-t border-solid divider-gray-300 " role="contentinfo">
-  <div class="flex pt-1">
-    <div class="w-1/2">
-      <ul class="">
+<footer id="footer" class="w-full max-w-6xl mx-auto mb-32" role="contentinfo">
+  <div class="mx-4 md:mx-8 border-t border-solid divider-gray-200 px-2 pt-1">
+    <div class="text-center">
+      <ul class="mb-1">
         <li class="">
-          <a href="/contact/" class="text-purple-700 font-bold">Book a call</a>
+          <a href="/contact/" class="text-brand-darkblue hover:text-purple-700 font-bold">Book a call</a> <span class="hidden md:inline">•</span>
         </li>
         {% for site, link in site.social_links %}
           <li class="">
@@ -14,7 +14,7 @@
         {% endfor %}
       </ul>
     </div>
-    <div class="w-1/2 text-right font-mono font-sm text-coolGray-400">
+    <div class="mt-4 text-center font-mono text-xs text-coolGray-400">
       © 2020
     </div>
   </div>
