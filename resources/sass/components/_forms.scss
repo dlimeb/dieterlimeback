@@ -2,10 +2,33 @@
 //========== Forms ==========//
 //
 
-.dl-form__label {
-  @apply font-sans uppercase text-sm tracking-wide font-bold;
+.dl-form-row {
+  @apply mb-8 flex flex-col;
+
+  @media (min-width: theme('screens.md')) {
+    @apply flex-row;
+  }
 }
+
+.dl-form__label {
+  @apply font-sans text-base block mr-4;
+  padding-top: 0.875rem;
+
+  @media (min-width: theme('screens.md')) {
+    @apply inline-block w-1/4 ml-4;
+  }
+}
+
 .dl-form__input {
-  @apply font-mono text-sm p-4;
+  @apply font-mono text-sm p-4 block;
+  border-radius: 4px;
+
+  @media (min-width: theme('screens.md')) {
+    @apply inline-block w-2/3 ml-4;
+  }
+}
+
+.dl-form__textarea {
+  @apply h-32;
 }
 

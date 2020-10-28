@@ -1,32 +1,26 @@
-//
-//========== Header & Footer ==========//
-//
+/*===================================
 
-header a,
-footer a {
-  @apply border-0 font-sans text-xs font-bold uppercase tracking-wider;
+    HEADER
+
+===================================*/
+
+.logo {
+  @apply bg-gray-800 text-white;
+  padding: 12px;
+  border-radius: 24px;
 
   &:hover {
-    @apply no-underline border-b border-solid;
-    border-color: theme('colors.oof');
-  }
-
-  &.logo:hover {
-    border: 0;
+    @apply bg-gray-900 border-0;
   }
 }
 
-footer {
-  input[type='submit'] {
-    &:hover {
-      cursor: pointer;
-    }
+header a {
+  @apply border-0 text-sm font-mono tracking-tight;
+
+  &:hover {
+    @apply no-underline font-bold border-b border-solid;
   }
 }
-
-
-
-
 
 .mobile-nav__toggle {
   width: 20px;

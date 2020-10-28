@@ -1,10 +1,6 @@
 {
     "main": [
         {
-            "label": "Coaching",
-            "url": "/coaching/"
-        },
-        {
             "label": "Contact",
             "url": "/contact/"
         }

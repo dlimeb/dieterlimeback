@@ -1,0 +1,17 @@
+/*===================================
+
+    FOOTER
+
+===================================*/
+
+footer li {
+  @apply m-0 mr-4 font-mono text-sm tracking-tight list-none inline-block;
+  
+  a {
+    @apply border-0 text-sm font-mono tracking-tight text-coolGray-500;
+
+    &:hover {
+      @apply text-brand-darkblue no-underline font-bold border-b border-solid;
+    }
+  }
+}

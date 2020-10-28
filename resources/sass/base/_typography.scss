@@ -1,38 +1,57 @@
-//
-//========== Typography ==========//
-//
+/*===================================
 
-h1 {
-  hyphens: none;
+    TYPOGRAPHY
 
-  a {
-    @apply border-0;
+===================================*/
 
-    &:hover {
-      @apply underline;
-    }
-  }
+/* FONT DEFINITIONS */
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../../../fonts/HKGrotesk-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-h2,
-p,
-ul,
-ol,
-.dl-text__body {
-  @apply font-serif text-base leading-snug;
-  letter-spacing: -0.007em;
-  hyphens: none;
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../../../fonts/HKGrotesk-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../../../fonts/HKGrotesk-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../../../fonts/HKGrotesk-ExtraBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @media (min-width: theme('screens.sm')) {
-    @apply text-lg;
-  }
+
+/* GLOBAL TYPOGRAPHIC DEFAULTS */
+body {
+  @apply font-sans text-brand-darkblue;
+}
+
+
+/* RAW ELEMENTS */
+h1 {
+  @apply text-4xl font-extrabold my-8 tracking-tight;
 }
 h2 {
-  @apply font-bold mt-12 mb-4 tracking-normal;
+  @apply text-2xl my-8;
 }
 p,
 ul,
 ol {
-  @apply mb-8 leading-normal;
+  @apply text-lg mb-6;
 }
 ul,
 ol {
@@ -42,14 +61,18 @@ ol {
     @apply ml-0;
   }
 }
+ul {
+  @apply list-disc;
+}
+ol {
+  @apply list-decimal;
+}
 a {
   @apply border-b border-solid border-gray-900;
   transition: 0.1s color ease-out;
 
   &:hover,
   &:active {
-    color: theme('colors.oof');
-    border-color: theme('colors.oof');
   }
 }
 em {
@@ -61,36 +84,12 @@ strong {
 blockquote {
   @apply my-12 pl-8 pr-12 italic;
 }
-ul {
-  @apply list-disc;
-}
-ol {
-  @apply list-decimal;
-}
+
+
+/* NICER TYPOGRAPHY */
 .small-caps {
-  @apply text-xl;
+  @apply text-sm;
 }
-
-
-//
-// Extracted styles
-//
-
-.dl-heading__primary {
-  @apply font-serif font-normal tracking-tight text-4xl leading-tight;
-
-  @media (min-width: theme('screens.md')) {
-    @apply text-5xl;
-  }
-}
-.dl-heading__secondary {
-  @apply font-serif font-bold text-2xl leading-tight tracking-normal;
+.no-hyphens {
   hyphens: none;
-
-  @media (min-width: theme('screens.md')) {
-    @apply text-3xl;
-  }
-}
-.dl-heading__pretitle {
-  @apply font-sans font-bold uppercase text-sm tracking-widest text-blue-400;
 }

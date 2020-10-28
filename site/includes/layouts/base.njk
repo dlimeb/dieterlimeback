@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="min-h-full antialiased">
+<html lang="en" class="min-h-full">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,21 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,300;1,500&display=swap" rel="stylesheet"> 
+
   {% if hidden === true %}
     <meta name="robots" content="noindex,follow" />
   {% endif %}
 
-  <link rel="stylesheet" href="https://use.typekit.net/lii7tdy.css">
-  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css">
-
-  {# include main.css if in development mode #}
+  {# Include main.css if in development mode #}
   {% if helpers.environment == "development" %}
     <link rel="stylesheet" href="/css/main.css">
   {% else %}
-    {# else, use the minified css file for production #}
+    {# Else, use the minified css file for production #}
     <link rel="stylesheet" href="/css/main.min.css">
   {% endif %}
 
-  {# social meta tags and assets like fonts, favicons etc, should be last #}
+  {# Social meta tags and assets like fonts, favicons etc, should be last #}
   {% include "components/social-meta.njk" %}
 
   <link rel="icon" type="image/png" sizes="16x16" href="{{ site.images.favicon.small }}">
@@ -31,18 +30,18 @@
   <link rel="icon" type="image/png" sizes="96x96" href="{{ site.images.favicon.large }}">
 </head>
 
-<body class="{{ body_class }} min-h-full text-blue-900" style="background-color: {% if page_highlight %} {{ page_highlight }} {% else %} #fff {% endif %}">
+<body class="{{ body_class }} min-h-full">
 
   <a class="sr-only" href="#main">Skip to content</a>
 
-  <div class="flex flex-col relative min-h-screen bg-white">
+  <div class="flex flex-col relative min-h-screen">
 
-    {# render content #}
+    {# Render content #}
     {{ content | safe }}
 
   </div>
 
-  {# include scripts #}
+  {# Include scripts #}
   {% if helpers.environment == "development" %}
     <script src="/javascript/main.js"></script>
   {% else %}

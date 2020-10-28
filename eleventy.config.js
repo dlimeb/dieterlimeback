@@ -30,12 +30,20 @@ module.exports = eleventyConfig => {
       let cleaned = typeset(content);
       return cleaned;
     })
+    eleventyConfig.addPlugin(typesetPlugin({
+      disable: ['ligatures']
+    }));
 
     // Collections
-    // TODO Uncomment when articles are ready
     // eleventyConfig.addCollection('articles', collection => {
     //     return collection.getFilteredByTag('article').reverse()
     // })
+
+    // Generate Atom XML feed
+    // eleventyConfig.addPlugin(pluginRss);
+
+    // Lint for inclusive language
+    // eleventyConfig.addPlugin(inclusiveLangPlugin);
 
     // Layout aliases
     eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
@@ -49,18 +57,6 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("images")
     eleventyConfig.addPassthroughCopy("fonts")
     eleventyConfig.addPassthroughCopy("site/_redirects")
-
-    // Generate Atom XML feed
-    // TODO Uncomment when articles are ready
-    // eleventyConfig.addPlugin(pluginRss);
-
-    // Lint for inclusive language
-    eleventyConfig.addPlugin(inclusiveLangPlugin);
-
-    // Get nice typography
-    eleventyConfig.addPlugin(typesetPlugin({
-      disable: ['ligatures']
-    }));
 
     return {
         templateFormats: ["md", "njk"],
