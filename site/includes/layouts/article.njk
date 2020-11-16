@@ -7,7 +7,7 @@ layout: full
 
   {# title #}
   {% if title %}
-    <h1 class="font-serif font-light tracking-tight text-4xl md:text-5xl leading-none px-4 md:px-8">{{ title }}</h1>
+    <h1 class="text-center">{{ title }}</h1>
   {% endif %}
 
   {# featured image #}
@@ -20,15 +20,15 @@ layout: full
     </figure>
   {% endif %}
 
-  <div class="px-4 md:px-8 mt-12">
+  <div class="px-4 md:px-8 mt-12 mx-auto max-w-3xl">
     {# article content #}
     {{ content | safe }}
 
     {# timestamp #}
     {% if date %}
-    <div class="text-2xl font-serif italic mt-4 mb-24 mr-2 text-right">
+    <div class="text-sm text-gray-600 mt-8 mb-24 mr-2 text-right">
       <time datetime="{{ date }}">
-        &raquo; {{ date | dateDisplay }}
+        — {{ date | dateDisplay }}
       </time>
     </div>
     {% endif %}

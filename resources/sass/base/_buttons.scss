@@ -1,28 +1,22 @@
-//
-//========== Buttons ==========//
-//
+/*===================================
+
+    BUTTONS
+
+===================================*/
+
 
 .dl-button {
-  @apply font-sans font-bold text-sm uppercase text-center tracking-wide text-white border-0 px-12 py-5 inline-block;
+  @apply font-mono uppercase font-bold text-sm text-center text-white bg-coolGray-700 border-0 px-8 py-4 inline-block;
 
   &:hover {
-    @apply text-white;
+    @apply bg-coolGray-600;
   }
 }
 
 .dl-button__primary {
-  @apply bg-oof;
+  @apply text-brand-darkblue bg-brand-primary;
 
   &:hover {
-    @apply bg-oofhover;
-
-  }
-}
-.dl-button__default {
-  @apply bg-gray-800;
-
-  &:hover {
-    @apply bg-gray-900;
-
+    @apply bg-brand-primary-hover;
   }
 }

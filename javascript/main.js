@@ -24,9 +24,6 @@ page = function page(name) {
   "use strict";
 
   var specs = [{
-    component: ".faq",
-    triggers: [".faq__question"]
-  }, {
     component: ".mobile-nav",
     triggers: [".mobile-nav__toggle"]
   }]; // NodeList.forEach polyfill for IE11

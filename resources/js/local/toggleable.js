@@ -3,10 +3,6 @@
 
   var specs = [
     {
-      component: ".faq",
-      triggers: [".faq__question"]
-    },
-    {
       component: ".mobile-nav",
       triggers: [".mobile-nav__toggle"]
     }
