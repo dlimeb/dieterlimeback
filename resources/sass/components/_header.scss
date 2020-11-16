@@ -5,12 +5,12 @@
 ===================================*/
 
 .logo {
-  @apply bg-gray-800 text-white;
+  @apply bg-brand-darkblue text-white;
   padding: 12px;
   border-radius: 24px;
 
   &:hover {
-    @apply bg-gray-900 border-0;
+    @apply bg-blue-900 border-0;
   }
 }
 
@@ -18,7 +18,7 @@ header a {
   @apply border-0 text-sm font-mono tracking-tight;
 
   &:hover {
-    @apply no-underline font-bold border-b border-solid;
+    @apply no-underline font-bold border-b border-solid bg-transparent;
   }
 }
 

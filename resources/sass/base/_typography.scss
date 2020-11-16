@@ -7,23 +7,16 @@
 /* FONT DEFINITIONS */
 @font-face {
   font-family: "HKGrotesk";
-  src: url("../../../fonts/HKGrotesk-Regular.woff2") format("woff2");
+  src: url("../../../fonts/HKGrotesk-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "HKGrotesk";
-  src: url("../../../fonts/HKGrotesk-Italic.woff2") format("woff2");
+  src: url("../../../fonts/HKGrotesk-MediumItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "HKGrotesk";
-  src: url("../../../fonts/HKGrotesk-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
   font-display: swap;
 }
 @font-face {
@@ -68,11 +61,12 @@ ol {
   @apply list-decimal;
 }
 a {
-  @apply border-b border-solid border-gray-900;
-  transition: 0.1s color ease-out;
+  @apply border-b border-solid border-brand-darkblue;
+  transition: 0.1s all ease-out;
 
   &:hover,
   &:active {
+    @apply border-0 bg-brand-primary-hover-faded;
   }
 }
 em {

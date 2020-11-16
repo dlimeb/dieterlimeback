@@ -14,6 +14,7 @@ module.exports = {
         brand: {
           primary: '#39E5F8',
           'primary-hover': '#7EF1FE',
+          'primary-hover-faded': '#C4F7FD',
           darkblue: '#031a53'
         }
       }

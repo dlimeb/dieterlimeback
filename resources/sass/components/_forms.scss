@@ -11,8 +11,8 @@
 }
 
 .dl-form__label {
-  @apply font-sans text-base block mr-4;
-  padding-top: 0.875rem;
+  @apply font-mono font-bold text-sm block mr-4;
+  padding-top: 1rem;
 
   @media (min-width: theme('screens.md')) {
     @apply inline-block w-1/4 ml-4;

@@ -14,7 +14,7 @@ footer li {
     @apply border-0 text-xs font-mono tracking-tight text-coolGray-500;
 
     &:hover {
-      @apply text-brand-darkblue no-underline font-bold border-b border-solid;
+      @apply text-brand-darkblue no-underline font-bold border-b border-solid bg-transparent;
     }
   }
 }
