@@ -15,7 +15,7 @@
 }
 
 header a {
-  @apply border-0 text-sm font-mono tracking-tight;
+  @apply border-0 text-base font-sans tracking-tight;
 
   &:hover {
     @apply no-underline font-bold border-b border-solid bg-transparent;

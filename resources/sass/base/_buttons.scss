@@ -6,7 +6,7 @@
 
 
 .dl-button {
-  @apply font-mono uppercase font-bold text-sm text-center text-white bg-coolGray-700 border-0 px-8 py-4 inline-block;
+  @apply font-sans uppercase font-bold text-sm text-center text-white bg-coolGray-700 border-0 px-8 py-4 inline-block;
 
   &:hover {
     @apply bg-coolGray-600;

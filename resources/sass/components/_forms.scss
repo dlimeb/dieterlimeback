@@ -11,7 +11,7 @@
 }
 
 .dl-form__label {
-  @apply font-mono font-bold text-sm block mr-4;
+  @apply font-sans font-bold text-sm block mr-4;
   padding-top: 1rem;
 
   @media (min-width: theme('screens.md')) {
@@ -20,7 +20,7 @@
 }
 
 .dl-form__input {
-  @apply font-mono text-sm p-4 block;
+  @apply font-sans text-sm p-4 block;
   border-radius: 4px;
 
   @media (min-width: theme('screens.md')) {
